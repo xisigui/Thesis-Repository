@@ -56,9 +56,10 @@ public class GameControll : MonoBehaviour
 
     internal void HandleCorrectLetterClick(bool upperCase)
     {
-        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
-        if (upperCase)
-            clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString() + Letter.ToString());
+        // var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
+        var clip = _audioClips.FirstOrDefault();
+        // if (upperCase)
+            // clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString() + Letter.ToString());
 
         _audioSource.PlayOneShot(clip);
 
@@ -76,7 +77,8 @@ public class GameControll : MonoBehaviour
     private void MoveToNextLetter()
     {
         Letter++;
-        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
+        // var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
+        var clip = _audioClips.FirstOrDefault();
         if (clip == null)
             Letter = 'a';
     }
