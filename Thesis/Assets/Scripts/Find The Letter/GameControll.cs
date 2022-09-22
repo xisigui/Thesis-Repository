@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameControll : MonoBehaviour
 {
     [SerializeField] List<AudioClip> _audioClips;
+    public GameObject LevelCompleteDialog;
 
     public char Letter = 'a';
     
@@ -23,6 +24,7 @@ public class GameControll : MonoBehaviour
 
     void OnEnable()
     {
+        LevelCompleteDialog.SetActive(false);
         GenerateBoard();
         UpdateDiplayLetters();
     }
@@ -67,10 +69,8 @@ public class GameControll : MonoBehaviour
         FindObjectOfType<RemainingCounterText>().SetRemaining(_correctAnswers - _correctClicks);
         if (_correctClicks >= _correctAnswers)
         {
-            MoveToNextLetter();
-            UpdateDiplayLetters();
-            _correctClicks = 0;
-            GenerateBoard();
+            LevelCompleteDialog.SetActive(true);            
+            Debug.Log("Level Complete");
         }
     }
 
@@ -102,5 +102,14 @@ public class GameControll : MonoBehaviour
         }
 
         return randomLetter;
+    }    
+
+    public void Continue()
+    {
+        LevelCompleteDialog.SetActive(false);
+        MoveToNextLetter();
+        UpdateDiplayLetters();
+        _correctClicks = 0;
+        GenerateBoard();
     }
 }
