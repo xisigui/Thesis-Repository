@@ -58,10 +58,10 @@ public class GameControll : MonoBehaviour
 
     internal void HandleCorrectLetterClick(bool upperCase)
     {
-        // var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
-        var clip = _audioClips.FirstOrDefault();
+        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
+        // var clip = _audioClips.FirstOrDefault();
         // if (upperCase)
-            // clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString() + Letter.ToString());
+        //     clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString() + Letter.ToString());
 
         _audioSource.PlayOneShot(clip);
 
@@ -69,7 +69,10 @@ public class GameControll : MonoBehaviour
         FindObjectOfType<RemainingCounterText>().SetRemaining(_correctAnswers - _correctClicks);
         if (_correctClicks >= _correctAnswers)
         {
-            LevelCompleteDialog.SetActive(true);            
+            int clipNumber = Random.Range(1, 4);
+            var clips = _audioClips.FirstOrDefault(t => t.name == "Assessment_Complete_" + clipNumber);
+            LevelCompleteDialog.SetActive(true);    
+            _audioSource.PlayOneShot(clips);
             Debug.Log("Level Complete");
         }
     }
@@ -77,8 +80,8 @@ public class GameControll : MonoBehaviour
     private void MoveToNextLetter()
     {
         Letter++;
-        // var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
-        var clip = _audioClips.FirstOrDefault();
+        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
+        // var clip = _audioClips.FirstOrDefault();
         if (clip == null)
             Letter = 'a';
     }
