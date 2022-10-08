@@ -18,7 +18,7 @@ public class ClickableLetter : MonoBehaviour, IPointerClickHandler
         {
             GetComponent<TMP_Text>().color = Color.red;
             enabled = false;
-            Debug.Log($"Clicked the wrong letter");
+            GameControll.Instance.HandleWrongClick(_upperCase);
         }
     }
 

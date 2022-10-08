@@ -27,6 +27,7 @@ public class GameControll : MonoBehaviour
         LevelCompleteDialog.SetActive(false);
         GenerateBoard();
         UpdateDiplayLetters();
+        playLetterAudio();
     }
 
     void GenerateBoard()
@@ -57,14 +58,8 @@ public class GameControll : MonoBehaviour
     }
 
     internal void HandleCorrectLetterClick(bool upperCase)
-    {
-        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
-        // var clip = _audioClips.FirstOrDefault();
-        // if (upperCase)
-        //     clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString() + Letter.ToString());
-
-        _audioSource.PlayOneShot(clip);
-
+    {       
+        playLetterAudio();
         _correctClicks++;
         FindObjectOfType<RemainingCounterText>().SetRemaining(_correctAnswers - _correctClicks);
         if (_correctClicks >= _correctAnswers)
@@ -77,11 +72,17 @@ public class GameControll : MonoBehaviour
         }
     }
 
+    internal void HandleWrongClick(bool upperCase)
+    {
+        var clips = _audioClips.FirstOrDefault(t => t.name == "Assessment_Wrong_3");
+        _audioSource.PlayOneShot(clips);
+    }
+
     private void MoveToNextLetter()
     {
         Letter++;
-        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
-        // var clip = _audioClips.FirstOrDefault();
+        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());     
+
         if (clip == null)
             Letter = 'a';
     }
@@ -109,10 +110,17 @@ public class GameControll : MonoBehaviour
 
     public void Continue()
     {
+        _correctClicks = 0;
         LevelCompleteDialog.SetActive(false);
         MoveToNextLetter();
-        UpdateDiplayLetters();
-        _correctClicks = 0;
+        UpdateDiplayLetters();        
         GenerateBoard();
+        playLetterAudio();
+    }
+
+    private void playLetterAudio()
+    {
+        var clip = _audioClips.FirstOrDefault(t => t.name == Letter.ToString());
+        _audioSource.PlayOneShot(clip);
     }
 }
