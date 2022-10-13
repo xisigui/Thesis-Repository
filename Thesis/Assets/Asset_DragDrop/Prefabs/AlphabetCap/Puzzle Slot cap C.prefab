@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puzzle Slot cap C
       objectReference: {fileID: 0}
+    - target: {fileID: 1126043108093432098, guid: 681697afb31614047970fba6663f9f45, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86b7186c11fb849079f81fbd0bd916ba, type: 3}
     - target: {fileID: 1487174445107605962, guid: 681697afb31614047970fba6663f9f45, type: 3}
       propertyPath: m_Sprite
       value: 

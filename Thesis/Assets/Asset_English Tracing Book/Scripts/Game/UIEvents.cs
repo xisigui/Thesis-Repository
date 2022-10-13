@@ -164,6 +164,7 @@ public class UIEvents : MonoBehaviour
 		}
 
 		public void LeaveApp(){
-			Application.Quit ();
+			//Application.Quit ();
+			StartCoroutine(SceneLoader.LoadSceneAsync ("ScrollMainMenu"));
 		}
 }

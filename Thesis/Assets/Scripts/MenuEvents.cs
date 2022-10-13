@@ -16,5 +16,20 @@ public class MenuEvents : MonoBehaviour
 	{
 		StartCoroutine(SceneLoader.LoadSceneAsync ("Image Puzzle"));
 	}
+
+	 public void LoadColorQuizScene()
+	{
+		StartCoroutine(SceneLoader.LoadSceneAsync ("Persistent"));
+	}
     
+	 public void LoadMatchandTypeScene()
+	{
+		StartCoroutine(SceneLoader.LoadSceneAsync ("DragAndDrop"));
+	}
+
+	public void LoadMainMenuScene()
+	{
+		StartCoroutine(SceneLoader.LoadSceneAsync ("ScrollMainMenu"));
+	}
+	
 }

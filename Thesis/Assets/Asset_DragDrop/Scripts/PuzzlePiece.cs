@@ -37,7 +37,7 @@ public class PuzzlePiece : MonoBehaviour
     }
 
     void OnMouseUp(){
-        if(Vector2.Distance(transform.position,_slot.transform.position) < 3){
+        if(Vector2.Distance(transform.position,_slot.transform.position) > 3){
             transform.position = _slot.transform.position;
             _slot.Placed();
             isPlaced = true;

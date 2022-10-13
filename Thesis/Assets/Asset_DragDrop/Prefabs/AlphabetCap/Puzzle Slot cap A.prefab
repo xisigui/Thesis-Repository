@@ -9,8 +9,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 215952626177806118, guid: 681697afb31614047970fba6663f9f45, type: 3}
       propertyPath: m_Name
-      value: Puzzle Slot Base
+      value: Puzzle Slot cap A
       objectReference: {fileID: 0}
+    - target: {fileID: 1126043108093432098, guid: 681697afb31614047970fba6663f9f45, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8713f3a4873cc412c8683ac741266d4d, type: 3}
     - target: {fileID: 1976896847471041143, guid: 681697afb31614047970fba6663f9f45, type: 3}
       propertyPath: m_RootOrder
       value: 0
