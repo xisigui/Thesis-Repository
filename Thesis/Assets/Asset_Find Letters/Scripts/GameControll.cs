@@ -9,7 +9,7 @@ public class GameControll : MonoBehaviour
 
     public char Letter = 'a';
     
-    int _correctAnswers = 5;
+    public int _correctAnswers = 5;
     int _correctClicks;
     
     public static GameControll Instance { get; private set; }
