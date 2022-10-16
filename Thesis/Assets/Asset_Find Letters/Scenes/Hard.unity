@@ -2052,7 +2052,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 522133045}
         m_TargetAssemblyTypeName: MenuEvents, Assembly-CSharp
-        m_MethodName: LoadMainMenuScene
+        m_MethodName: LoadFindLetterScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
