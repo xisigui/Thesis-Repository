@@ -25,7 +25,7 @@ public class ClickableLetter : MonoBehaviour, IPointerClickHandler
     public void SetLetter(char letter)
     {
         enabled = true;
-        GetComponent<TMP_Text>().color = Color.black;
+        GetComponent<TMP_Text>().color = new Color32(67,83,108, 255);
         _randomLetter = letter;
 
         if (Random.Range(0, 100) > 50)
