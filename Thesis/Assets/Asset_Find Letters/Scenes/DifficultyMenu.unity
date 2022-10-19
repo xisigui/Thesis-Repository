@@ -1414,7 +1414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Contains 21 randomized letter choice''s & life enabled. '
+  m_text: Normal difficulty find all 6 matching letter to win.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -1627,7 +1627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Contains 20 randomized letter choice''s & 3 life enabled. '
+  m_text: A more chanlenging way to play, find all 9 matching letter to win.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -3246,7 +3246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Contains 21 randomized letter choice''s & the life disabled. '
+  m_text: Beginner level only 3 letters need to find to win the game.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
