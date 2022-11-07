@@ -18,6 +18,9 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private void Update()
         {
+            if(DialogueManager.isActive == true)
+            return;
+            
             Vector2 dir = Vector2.zero;
             if (Input.GetKey(KeyCode.A))
             {
