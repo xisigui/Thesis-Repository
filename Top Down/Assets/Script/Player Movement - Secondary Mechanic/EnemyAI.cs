@@ -16,13 +16,15 @@ public class EnemyAI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if(distanceBetween == 1)
+        return; 
         Follow();
     }
 
     void Follow()
-    {        
+    { 
         distance = Vector3.Distance(transform.position, player.transform.position);
         Vector3 direction = player.transform.position - transform.position;
 
