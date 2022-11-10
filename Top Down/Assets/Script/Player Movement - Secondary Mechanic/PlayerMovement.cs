@@ -29,13 +29,13 @@ public class PlayerMovement : MonoBehaviour
     void ProcessInputs(){
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
-
+/*
         if(moveX == 0){
             anim.SetBool("isRun", false);
         } else {
             anim.SetBool("isRun", true);
         }
-
+*/
         moveDirection = new Vector2(moveX, moveY).normalized;
 
         if(moveX < 0 && facingRight){
