@@ -340,7 +340,7 @@ MonoBehaviour:
   PausedScreen: {fileID: 2123743115797816849}
   MenuUI: {fileID: 2123743115476471256}
   SettingsUI: {fileID: 2123743116569333851}
-  QuitGamePopup: {fileID: 0}
+  QuitGamePopup: {fileID: 2123743115792702787}
 --- !u!1 &2123743115529404971
 GameObject:
   m_ObjectHideFlags: 0
