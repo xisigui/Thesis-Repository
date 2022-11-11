@@ -8,6 +8,7 @@ public class PauseMenuEvents : MonoBehaviour
     public GameObject PausedScreen;
     public GameObject MenuUI;
     public GameObject SettingsUI;
+    public GameObject QuitGamePopup;
 
     public void ResumeGame()
     {
@@ -42,5 +43,15 @@ public class PauseMenuEvents : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+    public void OpenQuitMessange()
+    {
+        QuitGamePopup.SetActive(true);
+        MenuUI.SetActive(false);
+    }
+    public void CloseQuitMessange()
+    {
+        QuitGamePopup.SetActive(false);
+        MenuUI.SetActive(true);
     }
 }
