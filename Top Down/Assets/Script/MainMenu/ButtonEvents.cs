@@ -7,7 +7,7 @@ public class ButtonEvents : MonoBehaviour
     public void LoadGameScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }    
+    }
 
     public void Quit()
     {
