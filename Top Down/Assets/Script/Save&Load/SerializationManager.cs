@@ -4,24 +4,20 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class SerializationManager
 {
-    public static void Save(PlayerMovement player)
+    public static void Save(Player player)
     {
-        if(!Directory.Exists(Application.persistentDataPath + "/saves"))
-        {
-            Directory.CreateDirectory(Application.persistentDataPath + "/saves");
-        }
-
         BinaryFormatter formatter = GetBinaryFormatter();
-        string path = Application.persistentDataPath + "/saves";       
+        string path = Application.persistentDataPath + "/data.dat";   
         FileStream stream = new FileStream(path, FileMode.Create);
         PlayerData data = new PlayerData(player);
         formatter.Serialize(stream, data);
         stream.Close();
     }
 
-    public static object Load(string path)
+    public static PlayerData Load()
     {
-        path = Application.persistentDataPath + "/saves";
+        string path = Application.persistentDataPath + "/data.dat";
+
         if(!File.Exists(path))
         {
             Debug.LogError("Save file not found in " + path);
@@ -30,20 +26,9 @@ public class SerializationManager
 
         BinaryFormatter formatter = GetBinaryFormatter();
         FileStream stream = File.Open(path, FileMode.Open);
-
-        try
-        {           
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
-
-            stream.Close();
-            return data;
-        }
-        catch
-        {
-            Debug.LogError("Failed to load data at " + path);
-            stream.Close();
-            return null;
-        }        
+        PlayerData data = formatter.Deserialize(stream) as PlayerData;
+        stream.Close();
+        return data;               
     }
 
     public static BinaryFormatter GetBinaryFormatter()
