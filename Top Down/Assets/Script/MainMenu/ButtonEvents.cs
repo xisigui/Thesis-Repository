@@ -25,6 +25,5 @@ public class ButtonEvents : MonoBehaviour
         {
             yield return null;
         }
-        // loadingScreen.SetActive(false);
     }
 }
