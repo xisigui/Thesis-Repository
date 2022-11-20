@@ -4,14 +4,27 @@ using UnityEngine.SceneManagement;
 
 public class ButtonEvents : MonoBehaviour
 {
-    public void LoadGameScene()
+    public GameObject loadingScreen;
+    public void LoadGameScene(string levelToLoad)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+        StartCoroutine(LoadLevelAsync(levelToLoad));
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }    
 
     public void Quit()
     {
         //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
+    }
+    IEnumerator LoadLevelAsync(string levelToLoad)
+    {
+        loadingScreen.SetActive(true);
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
+        while(!loadOperation.isDone)
+        {
+            yield return null;
+        }
+        // loadingScreen.SetActive(false);
     }
 }
