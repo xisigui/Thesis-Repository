@@ -30,6 +30,7 @@ public class NPCMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         waitCounter = waitTime;
         walkCounter = walkTime;
 
@@ -41,13 +42,11 @@ public class NPCMovement : MonoBehaviour
         }
         
     }
-
     // Update is called once per frame
     void Update()
     {
         if(isWalking){
             walkCounter -= Time.deltaTime;
-           
                 waitCounter = waitTime;
                 switch(walkDirection){
                     case 0: 
@@ -56,9 +55,7 @@ public class NPCMovement : MonoBehaviour
                             isWalking = false;
                             walkCounter = waitTime;
                         }
-                        animator.SetFloat("Horizontal", movement.x);
-                        animator.SetFloat("Vertical", movement.y);
-                        animator.SetFloat("Speed", movement.sqrMagnitude);
+                        
                         break;
 
                     case 1: 
@@ -67,6 +64,7 @@ public class NPCMovement : MonoBehaviour
                             isWalking = false;
                             walkCounter = waitTime;
                         }
+                        
                         break;
                     case 2: 
                         rb.velocity = new Vector2(0, -moveSpeed);
@@ -74,6 +72,7 @@ public class NPCMovement : MonoBehaviour
                             isWalking = false;
                             walkCounter = waitTime;
                         }
+                        
                         break;
                     case 3: 
                         rb.velocity = new Vector2(-moveSpeed, 0);
@@ -81,6 +80,7 @@ public class NPCMovement : MonoBehaviour
                             isWalking = false;
                             walkCounter = waitTime;
                         }
+                        
                         break;
                 }
 
@@ -97,8 +97,6 @@ public class NPCMovement : MonoBehaviour
             }
 
         }
-        
- 
     }
 
     private void ChooseDirection(){
