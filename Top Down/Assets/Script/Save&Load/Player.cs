@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
         SerializationManager.Save(this);
     }
 
-
+    
     public void loadData()
     {
         PlayerData playerdata = SerializationManager.Load();
@@ -19,5 +19,8 @@ public class Player : MonoBehaviour
         position.z = playerdata.position[2];
 
         transform.position = position;
+
+        gameObject.GetComponent<SpriteRenderer>().sortingLayerName = playerdata.sortingLayer;
+        gameObject.gameObject.layer = LayerMask.NameToLayer(playerdata.sortingLayer);
     }
 }
