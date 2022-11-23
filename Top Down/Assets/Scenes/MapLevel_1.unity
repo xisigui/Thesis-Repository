@@ -6248,7 +6248,7 @@ PrefabInstance:
     - target: {fileID: 7947911505737750448, guid: cfa0a5ef94fb05d4f97d095a05dc55c5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7947911505737750448, guid: cfa0a5ef94fb05d4f97d095a05dc55c5,
         type: 3}
@@ -7859,6 +7859,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1371947545}
     m_Modifications:
+    - target: {fileID: 3182817861587628008, guid: c5bdca1933fde624698bb8c6d6daa44b,
+        type: 3}
+      propertyPath: QuestionPanel
+      value: 
+      objectReference: {fileID: 939926581}
     - target: {fileID: 3644440869396892318, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
       propertyPath: m_Layer
@@ -48739,7 +48744,7 @@ PrefabInstance:
     - target: {fileID: 7947911505737750448, guid: 41ea6afb203377e42995d7d016ea5907,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7947911505737750448, guid: 41ea6afb203377e42995d7d016ea5907,
         type: 3}
@@ -79241,6 +79246,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 9fb66d8c9d3b5194a82e9eed65a54afb,
     type: 3}
   m_PrefabInstance: {fileID: 939690589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &939926581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1861897589537889406, guid: abbcc0399bdba4544bd9161f3b283866,
+    type: 3}
+  m_PrefabInstance: {fileID: 1397778328}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &943083038
 PrefabInstance:
@@ -116554,6 +116565,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2078595401720607340, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.3901367
+      objectReference: {fileID: 0}
     - target: {fileID: 2612881007099497878, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
       propertyPath: m_IsActive
@@ -116779,6 +116795,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause UI
       objectReference: {fileID: 0}
+    - target: {fileID: 8421273357293296159, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4, type: 3}
 --- !u!1 &1836954477
@@ -118283,7 +118304,7 @@ PrefabInstance:
     - target: {fileID: 7947911505737750448, guid: 41ea6afb203377e42995d7d016ea5907,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7947911505737750448, guid: 41ea6afb203377e42995d7d016ea5907,
         type: 3}
