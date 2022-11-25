@@ -25,7 +25,6 @@ public class NPCMovement : MonoBehaviour
     public Animator animator;
     Vector2 movement;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +39,6 @@ public class NPCMovement : MonoBehaviour
             maxWalkPoint = walkzone.bounds.max;
             hasWalkzone = true;
         }
-        
     }
     // Update is called once per frame
     void Update()
@@ -54,17 +52,14 @@ public class NPCMovement : MonoBehaviour
                         if(hasWalkzone && transform.position.y > maxWalkPoint.y){
                             isWalking = false;
                             walkCounter = waitTime;
-                        }
-                        
+                        }   
                         break;
-
                     case 1: 
                          rb.velocity = new Vector2(moveSpeed, 0);
                          if(hasWalkzone && transform.position.y > maxWalkPoint.x){
                             isWalking = false;
                             walkCounter = waitTime;
-                        }
-                        
+                        }     
                         break;
                     case 2: 
                         rb.velocity = new Vector2(0, -moveSpeed);
@@ -72,7 +67,6 @@ public class NPCMovement : MonoBehaviour
                             isWalking = false;
                             walkCounter = waitTime;
                         }
-                        
                         break;
                     case 3: 
                         rb.velocity = new Vector2(-moveSpeed, 0);
@@ -80,7 +74,6 @@ public class NPCMovement : MonoBehaviour
                             isWalking = false;
                             walkCounter = waitTime;
                         }
-                        
                         break;
                 }
 
@@ -95,7 +88,6 @@ public class NPCMovement : MonoBehaviour
             if(waitCounter<0){
                 ChooseDirection();
             }
-
         }
     }
 

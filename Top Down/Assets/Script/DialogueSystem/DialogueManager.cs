@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     Message[] currentMessages;
     Actor[] currentActors;
+
     int activeMessage = 0;
     public static bool isActive = false;
 
@@ -48,6 +49,8 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    
+
     void AnimateTextColor(){
         LeanTween.textAlpha(messageText.rectTransform, 0, 0);
         LeanTween.textAlpha(messageText.rectTransform, 1, 0.5f);
@@ -55,6 +58,7 @@ public class DialogueManager : MonoBehaviour
 
     void Start(){
         backgroundBox.transform.localScale = Vector3.zero;
+
     }
 
     void Update()
