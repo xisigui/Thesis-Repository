@@ -12,9 +12,13 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
 
     public void Update(){
-        if(DialogueManager.isActive == true)
-        return;
-
+        if(DialogueManager.isActive == true){
+            moveSpeed = 0;
+            return;
+        } else {
+            moveSpeed = 5;
+        }
+        
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y =Input.GetAxisRaw("Vertical");
 
@@ -33,6 +37,8 @@ public class PlayerController : MonoBehaviour
         
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    
 
     
 }
