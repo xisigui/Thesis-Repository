@@ -13513,7 +13513,8 @@ MonoBehaviour:
   - {fileID: 9222148593173017649}
   - {fileID: 9222148592158076712}
   - {fileID: 9222148593515100898}
-  QuestionPanel: {fileID: 0}
+  QuestionPanel: {fileID: 9222148593553941481}
+  wrongAns: 0
 --- !u!1 &9222148593556697397
 GameObject:
   m_ObjectHideFlags: 0
