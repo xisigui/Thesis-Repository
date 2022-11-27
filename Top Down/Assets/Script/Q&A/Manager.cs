@@ -57,7 +57,6 @@ public class Manager : MonoBehaviour
 
         for(int i = 0; i < images.Length;i++)
         {
-            // Hide all images superior to the newHealth
             if (i >= Attempt)
                 images[i].enabled = false;
             else
