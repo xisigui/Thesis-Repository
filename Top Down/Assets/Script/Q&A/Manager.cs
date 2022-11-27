@@ -12,7 +12,7 @@ public class Manager : MonoBehaviour
     [SerializeField]
     private int currectLevelValueHolder;
     public int Score = 1;
-    private int wrongAns;
+    int Attempt = 3;
 
     void Update(){
         if(Score == 10)
@@ -42,27 +42,32 @@ public class Manager : MonoBehaviour
             Debug.Log("Score" + Score);          
         }
     }
-
+    public Image[] images;
     public void WrongAnswer(){
-        wrongAns++;
+        Attempt--;
         
-        if(wrongAns != 3){
-            questions[currentLevel].SetActive(false);
-            currentLevel++;
-            questions[currentLevel].SetActive(true);
-        } else {
+        if(Attempt == 0){
             questions[currentLevel].SetActive(false);
             QuestionPanel.SetActive(false);
             questions[currentLevel].SetActive(false);  
             currentLevel = 0;
             questions[currentLevel].SetActive(true);
-            wrongAns = 0;
+            Attempt = 3;
+        }
+
+        for(int i = 0; i < images.Length;i++)
+        {
+            // Hide all images superior to the newHealth
+            if (i >= Attempt)
+                images[i].enabled = false;
+            else
+                images[i].enabled = true;
         }
     }
 
     public void ResetQuestions(){
             currentLevel = 0;
-            wrongAns = 0;
+            Attempt = 3;
             currectLevelValueHolder = 0;
             Score = 0;
 
