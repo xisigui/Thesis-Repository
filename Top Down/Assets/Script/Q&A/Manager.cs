@@ -10,7 +10,6 @@ public class Manager : MonoBehaviour
     public GameObject AreaToUnlock; 
     public int currentLevel;
     [SerializeField]
-    private int currectLevelValueHolder;
     public int Score = 1;
     int Attempt = 3;
 
@@ -36,9 +35,7 @@ public class Manager : MonoBehaviour
         else
         {            
             questions[currentLevel].SetActive(false);
-            currectLevelValueHolder = currentLevel + 1; 
             QuestionPanel.SetActive(false);
-            Debug.Log("holder"+currectLevelValueHolder);
             Debug.Log("Score" + Score);          
         }
     }
@@ -68,7 +65,6 @@ public class Manager : MonoBehaviour
     public void ResetQuestions(){
             currentLevel = 0;
             Attempt = 3;
-            currectLevelValueHolder = 0;
             Score = 0;
 
             questions[currentLevel].SetActive(false);
