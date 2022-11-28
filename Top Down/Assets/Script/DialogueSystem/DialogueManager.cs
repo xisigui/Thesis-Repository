@@ -49,7 +49,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    
 
     void AnimateTextColor(){
         LeanTween.textAlpha(messageText.rectTransform, 0, 0);
