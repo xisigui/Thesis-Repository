@@ -77747,7 +77747,6 @@ GameObject:
   - component: {fileID: 760868747}
   - component: {fileID: 760868746}
   - component: {fileID: 760868745}
-  - component: {fileID: 760868744}
   - component: {fileID: 760868743}
   m_Layer: 21
   m_Name: PrepositionRestrict
@@ -77778,18 +77777,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &760868744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760868742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &760868745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81570,7 +81557,6 @@ GameObject:
   - component: {fileID: 933007373}
   - component: {fileID: 933007371}
   - component: {fileID: 933007370}
-  - component: {fileID: 933007374}
   - component: {fileID: 933007375}
   m_Layer: 20
   m_Name: NounRestict
@@ -81625,18 +81611,6 @@ Transform:
   m_Father: {fileID: 968507201}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &933007374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933007369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!68 &933007375
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -94033,7 +94007,6 @@ GameObject:
   - component: {fileID: 1312157525}
   - component: {fileID: 1312157529}
   - component: {fileID: 1312157528}
-  - component: {fileID: 1312157527}
   - component: {fileID: 1312157526}
   m_Layer: 20
   m_Name: PronounRestict
@@ -94079,18 +94052,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1312157527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312157524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1312157528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98072,7 +98033,6 @@ GameObject:
   - component: {fileID: 1456968278}
   - component: {fileID: 1456968277}
   - component: {fileID: 1456968276}
-  - component: {fileID: 1456968275}
   - component: {fileID: 1456968273}
   m_Layer: 20
   m_Name: VerbRestict
@@ -98103,18 +98063,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1456968275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456968272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1456968276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115644,7 +115592,6 @@ GameObject:
   - component: {fileID: 1594945253}
   - component: {fileID: 1594945252}
   - component: {fileID: 1594945251}
-  - component: {fileID: 1594945250}
   - component: {fileID: 1594945249}
   m_Layer: 21
   m_Name: InterjectionRestrict
@@ -115675,18 +115622,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1594945250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594945248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1594945251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115993,7 +115928,6 @@ GameObject:
   - component: {fileID: 1606198008}
   - component: {fileID: 1606198012}
   - component: {fileID: 1606198011}
-  - component: {fileID: 1606198010}
   - component: {fileID: 1606198009}
   m_Layer: 21
   m_Name: AdjectiveRestrict
@@ -116039,18 +115973,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1606198010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606198007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1606198011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119432,7 +119354,6 @@ GameObject:
   - component: {fileID: 1716896177}
   - component: {fileID: 1716896182}
   - component: {fileID: 1716896181}
-  - component: {fileID: 1716896180}
   - component: {fileID: 1716896179}
   - component: {fileID: 1716896178}
   - component: {fileID: 1716896183}
@@ -119502,18 +119423,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1716896180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716896176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1716896181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122436,7 +122345,6 @@ GameObject:
   - component: {fileID: 1861407695}
   - component: {fileID: 1861407694}
   - component: {fileID: 1861407693}
-  - component: {fileID: 1861407692}
   - component: {fileID: 1861407691}
   m_Layer: 21
   m_Name: ConjunctionRestrict
@@ -122467,18 +122375,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1861407692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861407690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a92070abe0c7f42a560bd33ce1e368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1861407693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130191,6 +130087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: moveSpeed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556879907405721340, guid: f52f93413c32dca459ac190b4a3c3912,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4556879907405721342, guid: f52f93413c32dca459ac190b4a3c3912,
         type: 3}
