@@ -336,7 +336,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677601387895423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677601387895421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,6 +1233,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6092677602789315609}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
         m_MethodName: correctAnswer
         m_Mode: 1
         m_Arguments:
@@ -1908,7 +1932,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677601688568104}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677601688568110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4019,7 +4055,7 @@ GameObject:
   - component: {fileID: 6092677602033413222}
   - component: {fileID: 6092677602033413221}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Correct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4308,7 +4344,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602040640146}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602040640144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5568,7 +5616,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602216987776}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602216987782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5812,7 +5872,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602224988233}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602224988239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5980,7 +6052,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602250869222}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602250869220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6676,7 +6760,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602414945277}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602414945267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7056,7 +7152,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602474782378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602474782376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7764,7 +7872,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602603630488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602603630494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9130,7 +9250,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602745856072}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602745856078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9456,7 +9588,6 @@ MonoBehaviour:
   QuestionPanel: {fileID: 6092677602789315615}
   AreaToUnlock: {fileID: 0}
   currentLevel: 0
-  currectLevelValueHolder: 0
   Score: 1
   images:
   - {fileID: 0}
@@ -9586,7 +9717,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602790183109}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602790183131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10590,7 +10733,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602895366737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602895366743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10649,7 +10804,7 @@ GameObject:
   - component: {fileID: 6092677602926759679}
   - component: {fileID: 6092677602926759678}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Correct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11044,7 +11199,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602930695649}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602930695655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11520,7 +11687,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677602991766272}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677602991766278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11655,7 +11834,7 @@ GameObject:
   - component: {fileID: 6092677603023074965}
   - component: {fileID: 6092677603023074964}
   m_Layer: 0
-  m_Name: Button (2)
+  m_Name: Correct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12853,7 +13032,7 @@ GameObject:
   - component: {fileID: 6092677603170230597}
   - component: {fileID: 6092677603170230596}
   m_Layer: 0
-  m_Name: Button (2)
+  m_Name: Correct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13142,7 +13321,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677603177512260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677603177512282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13702,7 +13893,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677603181914068}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677603181914090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14084,7 +14287,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677603209916382}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677603209916380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14389,6 +14604,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6092677602789315609}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
         m_MethodName: correctAnswer
@@ -15512,7 +15739,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6092677603470410104}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092677602789315609}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: WrongAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6092677603470410110
 MonoBehaviour:
   m_ObjectHideFlags: 0
