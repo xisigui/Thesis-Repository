@@ -20,8 +20,16 @@ public class Manager : MonoBehaviour
     void Update()
     {
         if(Score == 10){
+            if(quest.isActive)
+            {
+                quest.goal.QuizTaken(); 
+                if(quest.goal.IsReached())
+                {
+                    Debug.Log("ALL Quiz is finished");
+                    quest.Complete();
+                }
+            }
             AreaToUnlock.SetActive(false);
-            CurrentStatus();
         }
     }
     void Start()
@@ -80,17 +88,4 @@ public class Manager : MonoBehaviour
         questions[currentLevel].SetActive(false);
         questions[currentLevel].SetActive(true);
     }
-
-    public void CurrentStatus()
-    {
-        if(quest.isActive)
-        {
-            quest.goal.QuizTaken(); 
-            if(quest.goal.IsReached())
-            {
-                Debug.Log("ALL Quiz is finished");
-                quest.Complete();
-            }
-        }
-    } 
 }
