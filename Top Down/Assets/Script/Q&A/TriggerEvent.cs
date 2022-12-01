@@ -6,31 +6,26 @@ public class TriggerEvent : MonoBehaviour
 {
     public GameObject QuestionPanel;
     public GameObject interactText;
-    public GameObject heart1;
-    public GameObject heart2;
-    public GameObject heart3;
+    public GameObject AttemptIndicator;
     public Manager manager;
 
-    private bool isInside; 
+    bool isInside; 
 
-    void Start(){
-
-    }
     void Update()
     {
         if(isInside)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(manager.Score != 10){
+                if(manager.currentLevel != 9){
                     manager.ResetQuestions();
                 }
                 QuestionPanel.SetActive(true);
-                heart1.SetActive(true);
-                heart2.SetActive(true);
-                heart3.SetActive(true);
+                AttemptIndicator.SetActive(true);
             }
-        }        
+        }
+        if(manager.currentLevel == 9)
+            manager.AreaToUnlock.SetActive(false);    
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -43,11 +38,7 @@ public class TriggerEvent : MonoBehaviour
     {        
         interactText.SetActive(false);
         QuestionPanel.SetActive(false);
-        heart1.SetActive(false);
-        heart2.SetActive(false);
-        heart3.SetActive(false);
+        AttemptIndicator.SetActive(false);
         isInside = false;
-        if(manager.Score == 10)
-        manager.AreaToUnlock.SetActive(false);
     }
 }

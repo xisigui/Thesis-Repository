@@ -8,53 +8,34 @@ public class Manager : MonoBehaviour
     public GameObject[] questions;
     public GameObject QuestionPanel;
     public GameObject AreaToUnlock;
+    public GameObject AttemptIndicator;
     
-    public Quest quest;
-    QuestGoal goal;
-
     public int currentLevel;
     [SerializeField]
-    public int Score = 1;
     int Attempt = 3;
 
+    public Image[] hearts;
     void Update()
     {
-        if(Score == 10){
-            if(quest.isActive)
-            {
-                quest.goal.QuizTaken(); 
-                if(quest.goal.IsReached())
-                {
-                    Debug.Log("ALL Quiz is finished");
-                    quest.Complete();
-                }
-            }
+        if(currentLevel == 9){
             AreaToUnlock.SetActive(false);
         }
     }
-    void Start()
-    {
-        if(Score != 10)
-            ResetQuestions();
-    }
+
     public void correctAnswer()
     {
-        Score++;
         if(currentLevel + 1 != questions.Length)
         {
             questions[currentLevel].SetActive(false);
             currentLevel++;
             questions[currentLevel].SetActive(true);
-            Debug.Log("Score" + Score);
         }
         else
         {            
             questions[currentLevel].SetActive(false);
-            QuestionPanel.SetActive(false);
-            Debug.Log("Score" + Score);          
+            QuestionPanel.SetActive(false);      
         }
     }
-    public Image[] images;
     public void WrongAnswer()
     {
         Attempt--;
@@ -63,19 +44,19 @@ public class Manager : MonoBehaviour
         {
             questions[currentLevel].SetActive(false);
             QuestionPanel.SetActive(false);
+            AttemptIndicator.SetActive(false);
             questions[currentLevel].SetActive(false);  
             currentLevel = 0;
             questions[currentLevel].SetActive(true);
             Attempt = 3;
         }
 
-        for(int i = 0; i < images.Length;i++)
+        for(int i = 0; i < hearts.Length;i++)
         {
-            // Hide all images superior to the newHealth
             if (i >= Attempt)
-                images[i].enabled = false;
+                hearts[i].enabled = false;
             else
-                images[i].enabled = true;
+                hearts[i].enabled = true;
         }
     }
 
@@ -83,7 +64,6 @@ public class Manager : MonoBehaviour
     {
         currentLevel = 0;
         Attempt = 3;
-        Score = 0;
 
         questions[currentLevel].SetActive(false);
         questions[currentLevel].SetActive(true);
