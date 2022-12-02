@@ -6,10 +6,11 @@ public class ButtonEvents : MonoBehaviour
 {
     public GameObject loadingScreen;
     public void LoadGameScene(string levelToLoad)
-    {
-        
+    {        
         StartCoroutine(LoadLevelAsync(levelToLoad));
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FindObjectOfType<MusicManager>().StopPlaying("Main Music");   
+        FindObjectOfType<MusicManager>().Play("Intro Music");
     }    
 
     public void Quit()

@@ -14,6 +14,8 @@ public class PauseMenuEvents : MonoBehaviour
     {
         Time.timeScale = 1;
         PausedScreen.SetActive(false);
+        FindObjectOfType<MusicManager>().StopPlaying("Dialog Music");
+        FindObjectOfType<MusicManager>().Play("Main Music");
     }
 
     public void OpenSettings()
@@ -28,21 +30,18 @@ public class PauseMenuEvents : MonoBehaviour
         MenuUI.SetActive(true);
     }
 
-    public void ResetLevel()
-    {
-
-    }
-
     public void PauseGame()
     {
         Time.timeScale = 0;
         PausedScreen.SetActive(true);
+        FindObjectOfType<MusicManager>().StopPlaying("Main Music");
+        FindObjectOfType<MusicManager>().Play("Dialog Music");
     }
 
     public void QuitLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
     public void OpenQuitMessange()
     {
