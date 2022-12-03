@@ -34,7 +34,7 @@ public class PauseMenuEvents : MonoBehaviour
     {
         Time.timeScale = 0;
         PausedScreen.SetActive(true);
-        FindObjectOfType<MusicManager>().StopPlaying("Main Music");
+        FindObjectOfType<MusicManager>().Pause("Main Music");
         FindObjectOfType<MusicManager>().Play("Dialog Music");
     }
 

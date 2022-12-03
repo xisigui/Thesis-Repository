@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Started Conversation! loaded messages:" + messages.Length);
         DisplayMessage();
         backgroundBox.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();
-        FindObjectOfType<MusicManager>().StopPlaying("Main Music");
+        FindObjectOfType<MusicManager>().Pause("Main Music");
         FindObjectOfType<MusicManager>().Play("Dialog Music");
     }
 

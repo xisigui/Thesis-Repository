@@ -49,4 +49,10 @@ public class MusicManager : MonoBehaviour
         }
         m.source.Stop();
     }
+
+    public void Pause(string name)
+    {
+        Music m = Array.Find(musics, sound => sound.name == name);
+        m.source.Pause();
+    }
 }

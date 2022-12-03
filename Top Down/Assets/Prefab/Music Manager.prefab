@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8650319264024522425}
   - component: {fileID: 8650319264024522430}
   m_Layer: 0
-  m_Name: Music
+  m_Name: Music Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Dialog Music
     clip: {fileID: 8300000, guid: 1e48cf2131813e0449c6a379f3efc0dd, type: 3}
-    volume: 0.2
+    volume: 0.3
     loop: 1
     source: {fileID: 0}
   - name: Intro Music
