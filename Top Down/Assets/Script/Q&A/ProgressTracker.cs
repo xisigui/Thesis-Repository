@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProgressTracker : MonoBehaviour
 {
-    public GameObject[] Quizzes;
+    [SerializeField] public GameObject[] Quizzes;
 
     public void CheckLevels()
     {

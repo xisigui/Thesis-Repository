@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-   public void save()
+    public GameObject[] Quizzes;
+    public void save()
     {
         SerializationManager.Save(this);
     }
-
     
     public void loadData()
-    {
+    {        
         PlayerData playerdata = SerializationManager.Load();
+        
         Vector3 position;
         position.x = playerdata.position[0];
         position.y = playerdata.position[1];
@@ -22,5 +23,10 @@ public class Player : MonoBehaviour
 
         gameObject.GetComponent<SpriteRenderer>().sortingLayerName = playerdata.sortingLayer;
         gameObject.gameObject.layer = LayerMask.NameToLayer(playerdata.sortingLayer);
+        
+        for(int i = 0;i < Quizzes.Length;i++)
+        {
+            Quizzes[i].GetComponent<Manager>().currentLevel = playerdata.Level[i];            
+        }   
     }
 }
