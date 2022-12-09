@@ -5,22 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class ProgressTracker : MonoBehaviour
 {
-    [SerializeField] public GameObject[] Quizzes;
+    public GameObject[] Quizzes;
 
 
     public void Update()
     {
-        for(int i = 0;i < Quizzes.Length; i++)
-        {
-            if(Quizzes[i].GetComponent<Manager>().currentLevel != 9)
+        int numberOfFinishedAltar = 0;           
+            for(int i = 0;i < Quizzes.Length; i++)
             {
-                Debug.Log(Quizzes[i].name + " is not complete yet"); 
+                if(Quizzes[i].GetComponent<Manager>().currentLevel != 9)
+                {
+                    Debug.Log(Quizzes[i].name + " is not complete yet");                     
+                } 
+                else
+                {
+                    Debug.Log(Quizzes[i].name + " is complete");
+                    numberOfFinishedAltar++;                    
+                }     
             }
-            else {
-                Debug.Log(Quizzes[i].name + " is complete");
-                SceneManager.LoadScene(3);
-            }
-        }
+            if( numberOfFinishedAltar == 8)
+            {
+                SceneManager.LoadScene(3); 
+            }       
     }
 
     public void CompleteAll()
@@ -30,7 +36,7 @@ public class ProgressTracker : MonoBehaviour
             if(Quizzes[i].GetComponent<Manager>().currentLevel != 9)
             {
                 Quizzes[i].GetComponent<Manager>().currentLevel = 9;
-                SceneManager.LoadScene(3); 
+                // SceneManager.LoadScene(3); 
             }    
         }
         Debug.Log("All Levels are completed");
