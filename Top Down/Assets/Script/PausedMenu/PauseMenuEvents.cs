@@ -9,6 +9,7 @@ public class PauseMenuEvents : MonoBehaviour
     public GameObject MenuUI;
     public GameObject SettingsUI;
     public GameObject QuitGamePopup;
+    public GameObject Journal;
 
     public void ResumeGame()
     {
@@ -54,5 +55,26 @@ public class PauseMenuEvents : MonoBehaviour
     {
         QuitGamePopup.SetActive(false);
         MenuUI.SetActive(true);
+    }
+
+    public void OpenJournal(){
+        if(Journal.activeSelf)
+            Journal.SetActive(false);
+        else
+            Journal.SetActive(true);
+        
+    }
+    void CloseJournal(){
+        Journal.SetActive(false);
+    }
+
+    public void Update(){
+        if(Input.GetKeyDown(KeyCode.Tab)){
+            if(Journal.activeSelf)
+            CloseJournal();
+            else {
+            OpenJournal();
+            }
+        }
     }
 }
