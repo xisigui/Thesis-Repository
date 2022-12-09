@@ -9,6 +9,7 @@ public class ButtonEvents : MonoBehaviour
     {        
         StartCoroutine(LoadLevelAsync(levelToLoad));
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FindObjectOfType<MusicManager>().StopPlaying("Dialog Music");   
         FindObjectOfType<MusicManager>().Pause("Main Music");   
         FindObjectOfType<MusicManager>().Play("Intro Music");
     }    
