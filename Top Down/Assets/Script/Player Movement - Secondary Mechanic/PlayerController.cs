@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         }
         
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y =Input.GetAxisRaw("Vertical");
+        movement.y = Input.GetAxisRaw("Vertical");
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
