@@ -15,11 +15,11 @@ public class ProgressTracker : MonoBehaviour
             {
                 if(Quizzes[i].GetComponent<Manager>().currentLevel != 9)
                 {
-                    Debug.Log(Quizzes[i].name + " is not complete yet");                     
+                    //Debug.Log(Quizzes[i].name + " is not complete yet");                     
                 } 
                 else
                 {
-                    Debug.Log(Quizzes[i].name + " is complete");
+                    //Debug.Log(Quizzes[i].name + " is complete");
                     numberOfFinishedAltar++;                    
                 }     
             }
@@ -39,6 +39,6 @@ public class ProgressTracker : MonoBehaviour
                 // SceneManager.LoadScene(3); 
             }    
         }
-        Debug.Log("All Levels are completed");
+        //Debug.Log("All Levels are completed");
     }
 }

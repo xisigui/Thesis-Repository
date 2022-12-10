@@ -7,6 +7,7 @@ public class IntroDialogueTrigger : MonoBehaviour
     private bool istriggered = false;
     public GameObject disableObject; 
     public DialogueTrigger trigger;
+    
     private void OnTriggerEnter2D(Collider2D collision){
         if(istriggered == false){
             if(collision.gameObject.CompareTag("Player") == true){

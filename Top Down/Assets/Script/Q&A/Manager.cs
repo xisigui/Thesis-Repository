@@ -9,18 +9,26 @@ public class Manager : MonoBehaviour
     public GameObject QuestionPanel;
     public GameObject AreaToUnlock;
     public GameObject AttemptIndicator;
-    public GameObject Journal;
+
+    public GameObject soundObjectCorrect;
+    public GameObject soundObjectWrong;
+    private AudioClip clip;
+    private AudioClip Clip;
     
     public int currentLevel;
     [SerializeField]
     int Attempt = 3;
 
     public Image[] hearts;
+
+    void Start(){
+         clip = soundObjectCorrect.GetComponent<AudioSource>().clip;
+         Clip = soundObjectWrong.GetComponent<AudioSource>().clip;
+    }
     void Update()
     {
         if(currentLevel == 9){
             AreaToUnlock.SetActive(false);
-            Journal.SetActive(true);
         }
     }
 
@@ -31,6 +39,7 @@ public class Manager : MonoBehaviour
             questions[currentLevel].SetActive(false);
             currentLevel++;
             questions[currentLevel].SetActive(true);
+            soundObjectCorrect.GetComponent<AudioSource>().PlayOneShot(clip);
         }
         else
         {            
@@ -55,10 +64,13 @@ public class Manager : MonoBehaviour
 
         for(int i = 0; i < hearts.Length;i++)
         {
-            if (i >= Attempt)
+            if (i >= Attempt){
                 hearts[i].enabled = false;
-            else
-                hearts[i].enabled = true;
+                soundObjectWrong.GetComponent<AudioSource>().PlayOneShot(Clip);
+            }
+            else{
+                 hearts[i].enabled = true;
+            }
         }
     }
 

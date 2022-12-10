@@ -25,7 +25,8 @@ public class TriggerEvent : MonoBehaviour
             }
         }
         if(manager.currentLevel == 9)
-            manager.AreaToUnlock.SetActive(false);    
+            manager.AreaToUnlock.SetActive(false);
+                
     }
 
     void OnTriggerEnter2D(Collider2D collider)
