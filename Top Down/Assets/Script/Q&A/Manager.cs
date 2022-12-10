@@ -9,6 +9,7 @@ public class Manager : MonoBehaviour
     public GameObject QuestionPanel;
     public GameObject AreaToUnlock;
     public GameObject AttemptIndicator;
+    public GameObject Journal;
     
     public int currentLevel;
     [SerializeField]
@@ -19,6 +20,7 @@ public class Manager : MonoBehaviour
     {
         if(currentLevel == 9){
             AreaToUnlock.SetActive(false);
+            Journal.SetActive(true);
         }
     }
 
