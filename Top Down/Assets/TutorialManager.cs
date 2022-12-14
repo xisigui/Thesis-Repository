@@ -26,6 +26,7 @@ public class TutorialManager : MonoBehaviour
         } else if (popUpIndex == 1) {
             if(waitTime <= 0){
                 NPC.SetActive(true);
+                popUpIndex++;
             }else {
                 waitTime -= Time.deltaTime;
             }
