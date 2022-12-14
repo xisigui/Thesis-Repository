@@ -1,0 +1,486 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6947733521362658661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6947733521362658662}
+  - component: {fileID: 6947733521362658663}
+  m_Layer: 21
+  m_Name: Circle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6947733521362658662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521362658661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1569, y: -0.3289, z: 0}
+  m_LocalScale: {x: 0.7116775, y: 0.5478602, z: 0.3555}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6947733521689375194}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &6947733521362658663
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521362658661}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+    type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.22745098}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &6947733521689375193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6947733521689375194}
+  - component: {fileID: 6947733521689375185}
+  - component: {fileID: 6947733521689375184}
+  - component: {fileID: 6947733521689375199}
+  - component: {fileID: 6947733521689375198}
+  - component: {fileID: 6947733521689375197}
+  - component: {fileID: 6947733521689375196}
+  - component: {fileID: 6947733521689375195}
+  m_Layer: 21
+  m_Name: NPC-Adjective
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6947733521689375194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20.84, y: -15.15, z: 0.13956922}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6947733521362658662}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &6947733521689375185
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -353490507, guid: 32b12e25548650b409ded2fd9bf49c76, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 1.0625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &6947733521689375184
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!61 &6947733521689375199
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.060624838, y: -0.13852674}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0034633, y: 1.7524062}
+  m_EdgeRadius: 0
+--- !u!114 &6947733521689375198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d39fd1e18d74b7488c7394a2fa8eaa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  bounds: {fileID: 0}
+--- !u!95 &6947733521689375197
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f43fca1fac0c2e4d80685855bced473, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6947733521689375196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20172a29c4af3b543bd2315ea22a0613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - actorid: 1
+    message: Hi, new adventurer over here! I've been waiting for you, I'm glad you
+      made it this far! I'm Shiki the purifier!
+  - actorid: 0
+    message: "Uhhhhhh\u2026hello  I'm Gabby \u2026 what happened to you"
+  - actorid: 1
+    message: "Oh, this? I was just purifying water and I slipped \u2026 I guess even
+      a master will get tired after all hehehehe!"
+  - actorid: 0
+    message: 'Wa wa wa water? '
+  - actorid: 1
+    message: "Yes ! water \u2026.ohhh I see you're thirsty \u2026. And I'm here to
+      help you regain your energy \u2026 You must be tired of all your adventures!"
+  - actorid: 1
+    message: Well then! I will give you one of my purified water as it is my job
+      to help adventures like you
+  - actorid: 0
+    message: 'Yes.. but momma said don''t I accept things from strangers '
+  - actorid: 1
+    message: "Oh yeah, right we must follow our Mother!  In that case \u2026 how
+      about you will be the very first one? "
+  - actorid: 1
+    message: "In that case \u2026 how about you will be the very first one?  \u2026like
+      an apprentice? "
+  - actorid: 1
+    message: "and I cannot help you I will just teach you the steps, as you can see
+      I cannot walk properly you are the one who will make it \u2026 so it is not
+      from a stranger and you can drink it.  Sound\u2019s right, right? "
+  - actorid: 0
+    message: "I miss my momma\u2026.. Sob sob sob"
+  - actorid: 1
+    message: "Don't worry dear \u2026 I'm sure your momma misses you too very much!
+      Do this for your momma ok? Don't be afraid, be brave so that your momma will
+      be very very proud of you for being such a big girl so don't cry ok? "
+  - actorid: 0
+    message: 'Yeah! I''m a big girl momma always said that to me! I won''t cry, I''m
+      brave! '
+  - actorid: 1
+    message: Good! Well then let's start!
+  - actorid: 0
+    message: Yes Sir!
+  - actorid: 1
+    message: First I want you to take this bucket and go to that river over there
+      so you can see it right? In order to have purified water we must have raw water
+      right? After that, you will get back to me and I will teach you the spells
+      of Adjectives
+  - actorid: 0
+    message: Yes Sir! ( Gabby runs to the river to get raw water)
+  - actorid: 0
+    message: "I'm here! \u2026 (shows The Master a bucket full of water) "
+  - actorid: 1
+    message: "Good, you are very fast at running\u2026  I'm sure you'll learn this
+      adjective faster also! It is heavy right? "
+  - actorid: 0
+    message: 'Yes! Sir! '
+  - actorid: 1
+    message: So what are we waiting for? Let's start learning! (open the Spellbook
+      of adjectives )
+  - actorid: 1
+    message: "An Adjective Is a part of speech and what's a part of speech? Well,
+      every word in a sentence has a role or a part to play. We figure out what each
+      word\u2019s role is by defining it. We figure it as a part of speech."
+  - actorid: 1
+    message: Gabby, remember this we use Adjective in sentences to describe what
+      a noun is like or to give it characteristics
+  - actorid: 1
+    message: "So instead of boy .. we could say Tall boy \u2026 the adjective there
+      is Tall "
+  - actorid: 1
+    message: "Or instead of a dog \u2026 we could say Hungry dog \u2026 with hungry
+      as our adjective "
+  - actorid: 1
+    message: Instead of a House.. We could say Haunted house .., hunted is the adjective
+      there
+  - actorid: 1
+    message: 'So, why do we use adjectives? '
+  - actorid: 0
+    message: '(stares at Shiki the purifier) '
+  - actorid: 1
+    message: 'Well without adjectives we wouldn''t be describe what things are like '
+  - actorid: 1
+    message: "If someone asks you what your best friend is like you\u2019d need an
+      adjective to describe him or her \u2026 as in he\u2019s fun and or she\u2019s
+      athletic \u2026 He\u2019s cool or She\u2019s intelligent "
+  - actorid: 1
+    message: "Adjectives are our way of telling people what the things around us
+      are like \u2026 what their characteristics are and how we think of them "
+  - actorid: 1
+    message: "So how do you know if a word is an adjective when you\u2019re reading
+      or listening to a book or story?"
+  - actorid: 0
+    message: When does it describe a noun? a noun is represent people or thing
+  - actorid: 1
+    message: Yes, you're right! I'm glad you know your nouns .. what a very good
+      girl Gabby!
+  - actorid: 0
+    message: Yes I learn it from Mother
+  - actorid: 1
+    message: "Ohhhhh I see\u2026"
+  - actorid: 1
+    message: "Here\u2019s a simple test to check if a word is an adjective \u2026
+      ask yourself this  Does it describe a person, place things, or ideas? "
+  - actorid: 1
+    message: 'Or does it give you a detail about a noun? '
+  - actorid: 1
+    message: 'This is Addy N. Adjective (points at the picture of a girl wearing
+      nice clothes and having brown short hair with a headband) her job is to add
+      information to nouns  '
+  - actorid: 1
+    message: For example, imagine Addy is wearing a Dress the word dress is a Noun
+      right?
+  - actorid: 0
+    message: Yes, it is!
+  - actorid: 1
+    message: "What\u2019s the dress like?"
+  - actorid: 1
+    message: 'Is it Green, Flowing, Flowery, Sparkly, or Soft? '
+  - actorid: 1
+    message: "Let\u2019s say Addy is wearing a soft green flowing dress"
+  - actorid: 1
+    message: 'In that sentence Soft, Green and Flowy are all the adjectives  '
+  - actorid: 0
+    message: "Soft\u2026Green \u2026 Flowy\u2026.. "
+  - actorid: 1
+    message: Yes! you got it
+  - actorid: 1
+    message: 'Now Addy is wearing a glasses  '
+  - actorid: 1
+    message: What are those glasses like?
+  - actorid: 1
+    message: 'We need adjectives to tell us whether are they round, square, blue,
+      or dark.  What else is Addy like .. every word we use to describe her is an
+      adjective  '
+  - actorid: 1
+    message: 'Is she brave, Generous, Fast, Happy, sad, or bold?  Now Gabby What
+      are some adjectives you''d use to describe yourself, your friends, your mom
+      and dad '
+  - actorid: 1
+    message: Of Course, Adjectives are not only used to describe people; you could
+      describe almost any noun with an adjective.
+  - actorid: 1
+    message: 'Your bike might be fast, your food might be delicious, and your school
+      might be huge! Your homework might be difficult. '
+  - actorid: 1
+    message: "Fast, Delicious, Huge, and Difficult all of those words are adjectives\u2026 "
+  - actorid: 0
+    message: "Fast, Delicious, Huge, and Difficult \u2026\u2026\u2026\u2026 "
+  - actorid: 1
+    message: "Yes! All of those words are adjectives  So to sum up \u2026 adjectives
+      are great! "
+  - actorid: 0
+    message: 'Adjectives are great! Adjectives are great! '
+  - actorid: 1
+    message: 'Yes Yes Yes! They make the world interesting, they turn ordinary nouns
+      extraordinary! '
+  - actorid: 1
+    message: "Frankly, adjectives are amazing ..  now that you know more about the
+      magical, eye-opening, and exciting world of Adjectives! You'll never use nouns
+      the same way again \u2026"
+  - actorid: 1
+    message: and if you always think of Addy when identifying adjectives you won't
+      go wrong.
+  - actorid: 1
+    message: Adjectives are also divided into the following types...
+  - actorid: 1
+    message: "The Adjectives of Quality .. for example \u2026 The flowers are Blue
+      \u2026 <B>Blue</B> is the Adjective for quality "
+  - actorid: 1
+    message: "The Adjectives of Quantity\u2026\u2026 Stella ate the whole melon\u2026
+      <b>Whole</b> is the Adjective for quantity"
+  - actorid: 1
+    message: "The Adjectives of Number \u2026 Taiga has bought five pens \u2026.
+      <b>Five</b> is the Adjective of Number"
+  - actorid: 1
+    message: "Demonstrative Adjectives \u2026 For Example .. That watch is mine \u2026
+      <b>That</b> is the Demonstrative Adjective"
+  - actorid: 1
+    message: "Interrogative Adjectives\u2026  Which book do you like to read? \u2026
+      <b>Which</b> is the Interrogative Adjective since it describes the book "
+  - actorid: 1
+    message: "And lastly the Possessive Adjectives \u2026The color of my bedroom
+      is Pink \u2026 <b>Pink</b> is the Possessive Adjective since it tells whose
+      bedroom."
+  - actorid: 1
+    message: Now use your Adjectives to purify the water. Look at the water in the
+      bucket and describe yourself  to purify it
+  - actorid: 0
+    message: 'Yes Sir! ( Gabby cast all his adjectives to the bucket full of water) '
+  - actorid: 1
+    message: 'Congratulations ! your water is purified you can drink it now and replenish
+      your energy! '
+  - actorid: 0
+    message: "(Gabby drinks the water)  Thank you sir for teaching me! I am fully
+      energized now \u2026  "
+  - actorid: 1
+    message: 'you''re welcome now go and have a safe adventure! '
+  actors:
+  - name: Gabby
+    sprite: {fileID: 21300000, guid: db3b6637f2348cd46ac660a82118f840, type: 3}
+  - name: Adej Vetci
+    sprite: {fileID: -353490507, guid: 32b12e25548650b409ded2fd9bf49c76, type: 3}
+--- !u!114 &6947733521689375195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947733521689375193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692110581343a4c4a8c7985bf22379e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 6947733521689375196}

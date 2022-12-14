@@ -1,0 +1,362 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7143093742005866701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7143093742005866700}
+  - component: {fileID: 7143093742005866693}
+  - component: {fileID: 7143093742005866698}
+  - component: {fileID: 7143093742005866699}
+  - component: {fileID: 7143093742005866696}
+  - component: {fileID: 7143093742005866697}
+  - component: {fileID: 7143093742005866702}
+  - component: {fileID: 7143093742005866703}
+  m_Layer: 21
+  m_Name: NPC-Abverb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7143093742005866700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.17, y: -8.99, z: 0.13956922}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7143093742737633896}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7143093742005866693
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -129293431, guid: 18a0d2c75bb1af6438c3539f81be34cb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 1.0625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &7143093742005866698
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!61 &7143093742005866699
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.060624838, y: -0.13852674}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1.0625}
+    newSize: {x: 0.75, y: 1.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0034633, y: 1.7524062}
+  m_EdgeRadius: 0
+--- !u!114 &7143093742005866696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d39fd1e18d74b7488c7394a2fa8eaa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  bounds: {fileID: 0}
+--- !u!95 &7143093742005866697
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f43fca1fac0c2e4d80685855bced473, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7143093742005866702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20172a29c4af3b543bd2315ea22a0613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - actorid: 1
+    message: Hep hep hep .. Hey little kid you are not allowed to pass here
+  - actorid: 0
+    message: Bu bu but why?
+  - actorid: 1
+    message: "Because nobody passes this area without paying me! Now give me some
+      money \u2026"
+  - actorid: 0
+    message: "But I don't have any money\u2026 I'm n0ot from this world"
+  - actorid: 1
+    message: 'Ohhh.. well I see .. you know I haven''t talked to anyone for a while
+      now...Why won''t you listen to my story and after that I''ll give you a free
+      pass. is that good for you? '
+  - actorid: 0
+    message: Yes Yes everything just to get to the shrine so I can go home
+  - actorid: 1
+    message: 'Well, then you''re lucky this story that I will tell you will surely
+      help you pass the challenges of the shrine. '
+  - actorid: 0
+    message: "Ohhhh\u2026. my! Thank you!"
+  - actorid: 1
+    message: This story is entitled as  Adverbs
+  - actorid: 1
+    message: 'Long long ago the verbs  they felt all alone, they felt incomplete,
+      they cried  And someone heard them! The Ad man came to their rescue! And he
+      says  '
+  - actorid: 1
+    message: "<i>\u201CDear verbs, you won't feel alone. I am blessing you with words
+      that will describe you further!. I'm giving you adverbs!\u201D</i>"
+  - actorid: 1
+    message: Moved become moved rapidly
+  - actorid: 1
+    message: 'Flew become Flew inside '
+  - actorid: 1
+    message: 'Plays become Plays everyday '
+  - actorid: 1
+    message: And the verbs were happy ever after.
+  - actorid: 0
+    message: Please tell me more about adverbs!
+  - actorid: 1
+    message: 'Adverbs describe or modify a verb, adjective or another adverb '
+  - actorid: 1
+    message: 'They can tell us how, where, and when '
+  - actorid: 1
+    message: "For example, she moved rapidly.. ..How does she move? \u2026 Rapidly "
+  - actorid: 1
+    message: "The bird flew inside \u2026. Where did the birds fly?... inside "
+  - actorid: 1
+    message: "He plays every day\u2026..When does he play?... Everyday"
+  - actorid: 1
+    message: "Most Adverb can be formed from adjectives by adding \u201CLy\u201D "
+  - actorid: 1
+    message: 'For example '
+  - actorid: 1
+    message: Shy to shyly
+  - actorid: 1
+    message: Quick to quickly
+  - actorid: 1
+    message: Angry to angrily
+  - actorid: 1
+    message: "But remember there are some words ending in \u201CLy\u201D which are
+      adjectives and not adverbs "
+  - actorid: 1
+    message: "For example, Mira is wearing a lovely dress for the party \u2026 Here
+      lovely describe the dress so it adjective not an adverb "
+  - actorid: 0
+    message: Adverbs are the real hero; they make verbs so complete!
+  - actorid: 1
+    message: "Yes, they are \u2026 and now you may pass this bridge .. and wish you
+      luck in that shrine!"
+  - actorid: 0
+    message: 'Thank you Very much for that wonderful story bye !.....   '
+  actors:
+  - name: Gabby
+    sprite: {fileID: 21300000, guid: db3b6637f2348cd46ac660a82118f840, type: 3}
+  - name: daverb
+    sprite: {fileID: -129293431, guid: 18a0d2c75bb1af6438c3539f81be34cb, type: 3}
+--- !u!114 &7143093742005866703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742005866701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692110581343a4c4a8c7985bf22379e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 7143093742005866702}
+--- !u!1 &7143093742737633897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7143093742737633896}
+  - component: {fileID: 7143093742737633899}
+  m_Layer: 21
+  m_Name: Circle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7143093742737633896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742737633897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1569, y: -0.3289, z: 0}
+  m_LocalScale: {x: 0.7116775, y: 0.5478602, z: 0.3555}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7143093742005866700}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7143093742737633899
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143093742737633897}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+    type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.22745098}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

@@ -1,0 +1,360 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3785606320830857774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3785606320830857775}
+  - component: {fileID: 3785606320830857750}
+  - component: {fileID: 3785606320830857769}
+  - component: {fileID: 3785606320830857768}
+  - component: {fileID: 3785606320830857771}
+  - component: {fileID: 3785606320830857770}
+  - component: {fileID: 3785606320830857773}
+  - component: {fileID: 3785606320830857772}
+  m_Layer: 21
+  m_Name: NPC-Conjunction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3785606320830857775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.46, y: -39.95, z: 0.13956922}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3785606320925316815}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3785606320830857750
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 648079400, guid: bb826428d2d30424f88c0339f4e961df, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 1.0625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &3785606320830857769
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!61 &3785606320830857768
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.060624838, y: -0.13852674}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.9375}
+    newSize: {x: 0.75, y: 1.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0034633, y: 1.7524062}
+  m_EdgeRadius: 0
+--- !u!114 &3785606320830857771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d39fd1e18d74b7488c7394a2fa8eaa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  bounds: {fileID: 0}
+--- !u!95 &3785606320830857770
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f43fca1fac0c2e4d80685855bced473, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3785606320830857773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20172a29c4af3b543bd2315ea22a0613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - actorid: 0
+    message: "Hello\u2026"
+  - actorid: 2
+    message: And?
+  - actorid: 0
+    message: Hello, and?
+  - actorid: 2
+    message: "No no no, it\u2019s supposed to be \u201CHello and great day!\u201D"
+  - actorid: 0
+    message: Oh! Hello and a great day to you!
+  - actorid: 1
+    message: 'Goood. My name is DaBaby, how can I be of service? '
+  - actorid: 0
+    message: 'Hi, DaBaby, I am Gabby, and I am looking for the guardian of conjunctions. '
+  - actorid: 1
+    message: "You found \u2018em, that\u2019s me! "
+  - actorid: 0
+    message: "Awesome! You see, I am trying to find a way back to my home and help
+      out a friend in finding their children\u2026 so-"
+  - actorid: 1
+    message: "Hmm -are these \u201Cchildren\u201D somehow kept inside the shrine
+      as a power source and you need to activate the shrines so you can get back
+      to your homeworld? "
+  - actorid: 0
+    message: '!!!'
+  - actorid: 1
+    message: "This happened a few decades back, too. Same exact scenario, but that\u2019s
+      okay. Are you aware of what conjunctions are? "
+  - actorid: 0
+    message: "I may have some sort of Idea, but I can\u2019t be too sure. Could you
+      please teach me what you know?"
+  - actorid: 1
+    message: sure.
+  - actorid: 1
+    message: 'A <b>Conjunction</b> is a word or phrase that connects words, phrases,
+      clauses, and sentences together. The word <b>and</b> is a commonly used example. '
+  - actorid: 1
+    message: "We can use a conjunction like <i>\u201Cand\u201D</i> in both simple
+      and complex ways: "
+  - actorid: 1
+    message: "The car is black <b>and</b> yellow - did you notice how the word \u201Cand\u201D
+      connects the two adjectives?  "
+  - actorid: 1
+    message: "By adding the word \u201Cand\u201D we are able to identify that the
+      car is both black and yellow. Let me give you a complex example."
+  - actorid: 1
+    message: 'The car is black, <b>and</b> it has unique details. '
+  - actorid: 1
+    message: Conjunctions are useful in writing and speech to connect related ideas
+      together and they help us make our sentences shorter, less repetitive, or less
+      confusing.
+  - actorid: 0
+    message: "I see\u2026 could you please give me more examples? "
+  - actorid: 1
+    message: Sure! Take note of these common conjunctions so you can refer to them
+      later.
+  - actorid: 1
+    message: '[Common Conjunctions] And, But, Or, So, Because, However, After, Since,
+      During, Than, Unless, That, and While.'
+  - actorid: 1
+    message: 'In the sentence: This pie is delicious, <b>however</b>, I still prefer
+      grilled fish.  '
+  - actorid: 1
+    message: 'Another one would be: Everyone else was singing <b>while</b> I danced. '
+  - actorid: 0
+    message: 'I think I get a little bit better now. Thank you so much! '
+  - actorid: 1
+    message: ' No problem. Go ahead and challenge the shrine, Good luck! '
+  actors:
+  - name: Gabby
+    sprite: {fileID: 21300000, guid: db3b6637f2348cd46ac660a82118f840, type: 3}
+  - name: Da Baby Conjunction
+    sprite: {fileID: 648079400, guid: bb826428d2d30424f88c0339f4e961df, type: 3}
+  - name: ???
+    sprite: {fileID: 648079400, guid: bb826428d2d30424f88c0339f4e961df, type: 3}
+--- !u!114 &3785606320830857772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320830857774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692110581343a4c4a8c7985bf22379e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 3785606320830857773}
+--- !u!1 &3785606320925316814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3785606320925316815}
+  - component: {fileID: 3785606320925316812}
+  m_Layer: 21
+  m_Name: Circle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3785606320925316815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320925316814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1569, y: -0.3289, z: 0}
+  m_LocalScale: {x: 0.7116775, y: 0.5478602, z: 0.3555}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3785606320830857775}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3785606320925316812
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785606320925316814}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+    type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.22745098}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
