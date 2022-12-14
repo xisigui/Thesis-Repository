@@ -7,6 +7,7 @@ public class TutorialManager : MonoBehaviour
     public GameObject[] popUps;
     private int popUpIndex;
     public GameObject NPC;
+    public float waitTime = 2f;
 
     void Update(){
         for (int i = 0; i < popUps.Length; i++)
@@ -23,8 +24,11 @@ public class TutorialManager : MonoBehaviour
                 popUpIndex++;
             }
         } else if (popUpIndex == 1) {
-            NPC.SetActive(true);
-            popUpIndex++; 
+            if(waitTime <= 0){
+                NPC.SetActive(true);
+            }else {
+                waitTime -= Time.deltaTime;
+            }
         } else {
             //Other Mechanic tutorial 
         }
