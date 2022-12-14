@@ -6,16 +6,19 @@ using UnityEngine.SceneManagement;
 public class SceneSelectionTrigger : MonoBehaviour
 {
     public GameObject interactText;
+    public int level;
 
     bool isInside;
 
-      void Update()
+    void Start(){
+    }
+    void Update()
     {
         if(isInside)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //Transition To noun Level Here
+                OpenScene();
             }
         }       
     }
@@ -30,5 +33,9 @@ public class SceneSelectionTrigger : MonoBehaviour
     {        
         interactText.SetActive(false);
         isInside = false;
+    }
+
+    public void OpenScene(){
+        SceneManager.LoadScene(level);
     }
 }

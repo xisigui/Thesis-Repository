@@ -21,18 +21,25 @@ public class TutorialManager : MonoBehaviour
 
         if(popUpIndex == 0){
             if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W)){
-                popUpIndex++;
+               popUpIndex++;
+               //StartCoroutine(MoveTutorial());
             }
         } else if (popUpIndex == 1) {
             if(waitTime <= 0){
                 NPC.SetActive(true);
-                popUpIndex++;
+                
             }else {
                 waitTime -= Time.deltaTime;
             }
         } else {
             //Other Mechanic tutorial 
         }
+        
+    }
+
+    IEnumerator MoveTutorial(){
+        yield return new WaitForSeconds(5);
+        Debug.Log(popUpIndex);
     }
     
 }
