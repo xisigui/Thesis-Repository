@@ -5,9 +5,11 @@ using UnityEngine.EventSystems;
 public class ClickableWord : MonoBehaviour, IPointerClickHandler
 {
     string _randomWord;
+    
     public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.Log($"Clicked on: {_randomWord}");        
+    { 
+        FindObjectOfType<GameController>().checkWord(_randomWord);   
+        enabled = false;         
     }
 
     public void SetLetter(string word)
