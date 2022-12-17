@@ -34,7 +34,6 @@ public class TutorialManager : MonoBehaviour
         } else {
             //Other Mechanic tutorial 
         }
-        
     }
 
     IEnumerator MoveTutorial(){
