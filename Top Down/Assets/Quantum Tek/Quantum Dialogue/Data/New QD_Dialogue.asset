@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc788fe28a1947c5906bf24c0472406, type: 3}
+  m_Name: New QD_Dialogue
+  m_EditorClassIdentifier: 
+  Conversations:
+  - ID: 6
+    Name: Meeting the NPC
+    FirstMessage: 8
+  Speakers:
+  - ID: 7
+    Name: NPC
+    Icon: {fileID: 0}
+  Messages:
+  - ID: 8
+    Speaker: 7
+    SpeakerName: NPC
+    PreviousMessage: -1
+    NextMessage: 12
+    MessageText: Hello Gabby
+    Clip: {fileID: 0}
+  - ID: 12
+    Speaker: -1
+    SpeakerName: 
+    PreviousMessage: 8
+    NextMessage: 13
+    MessageText: Hi Mrs Mother
+    Clip: {fileID: 0}
+  - ID: 13
+    Speaker: 7
+    SpeakerName: NPC
+    PreviousMessage: 12
+    NextMessage: 14
+    MessageText: What would you like to know
+    Clip: {fileID: 0}
+  - ID: 16
+    Speaker: 7
+    SpeakerName: NPC
+    PreviousMessage: -1
+    NextMessage: 17
+    MessageText: a word (other than a pronoun) used to identify any of a class of
+      people, places, or things (common noun), or to name a particular one of these
+      (proper noun).
+    Clip: {fileID: 0}
+  - ID: 17
+    Speaker: 11
+    SpeakerName: Gabby
+    PreviousMessage: 16
+    NextMessage: -1
+    MessageText: oh! okay!
+    Clip: {fileID: 0}
+  - ID: 18
+    Speaker: 7
+    SpeakerName: NPC
+    PreviousMessage: 14
+    NextMessage: 19
+    MessageText: 'A verb is a word that describes what the subject of a sentence
+      is doing. Verbs can indicate (physical or mental) actions, occurrences, and
+      states of being. Examples: Verbs in a sentence Jeffrey builds a house. Anita
+      is thinking about horses.'
+    Clip: {fileID: 0}
+  - ID: 19
+    Speaker: 11
+    SpeakerName: Gabby
+    PreviousMessage: 18
+    NextMessage: -1
+    MessageText: So that is a verb!
+    Clip: {fileID: 0}
+  Choices:
+  - ID: 14
+    Choices:
+    - Noun
+    - Verb
+    NextMessages: 0d00000012000000
