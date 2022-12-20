@@ -994,7 +994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e215bbb36679a431e93c51bb0514659e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: c88f0ee2af74c4a4a886fa32d503c9da, type: 2}
+  dialogue: {fileID: 11400000, guid: 094e042eaa27946b383320a39f4ca1b0, type: 2}
   currentConversationIndex: -1
   currentConversation:
     ID: 0
