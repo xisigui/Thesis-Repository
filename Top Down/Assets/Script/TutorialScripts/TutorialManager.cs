@@ -7,9 +7,9 @@ public class TutorialManager : MonoBehaviour
     public GameObject[] popUps;
     private int popUpIndex;
     public GameObject NPC;
-    public float waitTime = 2f;
 
-    void Update(){
+    void Update()
+    {
         for (int i = 0; i < popUps.Length; i++)
         {
             if(i == popUpIndex){
@@ -18,27 +18,24 @@ public class TutorialManager : MonoBehaviour
                 popUps[i].SetActive(false);
             }
         }
-
-        if(popUpIndex == 0){
-            if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W)){
-               popUpIndex++;
-               //StartCoroutine(MoveTutorial());
+        
+        if(popUpIndex == 0)
+        {
+            if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W))
+            {
+               Invoke("PopUpIncrementDelay", 5);
             }
-        } else if (popUpIndex == 1) {
-            if(waitTime <= 0){
-                NPC.SetActive(true);
-                
-            }else {
-                waitTime -= Time.deltaTime;
-            }
-        } else {
+        } else if (popUpIndex == 1) 
+        {
+            NPC.SetActive(true);
+            Invoke("PopUpIncrementDelay", 5);
             //Other Mechanic tutorial 
         }
     }
 
-    IEnumerator MoveTutorial(){
-        yield return new WaitForSeconds(5);
-        Debug.Log(popUpIndex);
+    public void PopUpIncrementDelay(){
+        popUpIndex++;
     }
+    
     
 }

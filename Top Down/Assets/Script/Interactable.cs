@@ -28,6 +28,7 @@ public class Interactable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider){
         if(collider.gameObject.CompareTag("Player")){
             isInRange = true;
+            collider.gameObject.GetComponent<PlayerManager>().NotifyPlayer();
             Debug.Log("In Ranged");
         }
     }
@@ -35,7 +36,7 @@ public class Interactable : MonoBehaviour
      private void OnTriggerExit2D(Collider2D collider){
         if(collider.gameObject.CompareTag("Player")){
             isInRange = false;
-            Debug.Log("Not in Ranged");
+            collider.gameObject.GetComponent<PlayerManager>().DenotifyPlayer();
         }
     }
 }
