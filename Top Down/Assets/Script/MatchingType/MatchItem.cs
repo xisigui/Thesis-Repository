@@ -15,6 +15,7 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
 
     private GameObject line;
 
+
     public void OnPointerDown(PointerEventData eventData){
         line = Instantiate(linePrefab, transform.position, Quaternion.identity, transform.parent.parent);
         UpdateLine(eventData.position);
@@ -39,7 +40,7 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
         Vector3 direction = position - transform.position;
         line.transform.right = direction;
 
-        line.transform.localScale = new Vector3(direction.magnitude, 1, 1);
+        line.transform.localScale = new Vector3(direction.magnitude, 3, 3);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

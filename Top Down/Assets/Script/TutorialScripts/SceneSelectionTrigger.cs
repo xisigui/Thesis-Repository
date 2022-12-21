@@ -10,19 +10,6 @@ public class SceneSelectionTrigger : MonoBehaviour
 
     bool isInside;
 
-    void Start(){
-    }
-    void Update()
-    {
-        if(isInside)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                OpenScene();
-            }
-        }       
-    }
-
     void OnTriggerEnter2D(Collider2D collider)
     {
         interactText.SetActive(true);
@@ -36,6 +23,9 @@ public class SceneSelectionTrigger : MonoBehaviour
     }
 
     public void OpenScene(){
-        SceneManager.LoadScene(level);
+        if(isInside){
+            SceneManager.LoadScene(level);
+        }
+       
     }
 }
