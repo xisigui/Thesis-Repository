@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     int _correctAnswers = 5;
-    int _correctClicks = 0;
+    int _correctClicks;
+    int _wrongClicks;
     string[] nounDictionary = { "Family", "People", "Friend", "Year", "Teacher", "Student" };
     string[] fillDictionary = { "Blank", "Blank", "Blank", "Blank", "Blank", "Blank" };
 
@@ -35,14 +36,16 @@ public class GameController : MonoBehaviour
     }
 
     public void checkWord(string word)
-    {
-        for (int i = 0;i<nounDictionary.Length ;i++)
+    {        
+        if(nounDictionary.Contains(word))
         {
-            if(word.Equals(nounDictionary[i]))
-            {
-                _correctClicks++;
-                FindObjectOfType<CorrectCounterText>().SetCorrectCount(_correctClicks);
-            }                
+            _correctClicks++;
+            FindObjectOfType<CorrectCounterText>().SetCorrectCount(_correctClicks);
+            ClickableWord.isCorrect = true;
+        }else
+        {
+            _wrongClicks++;
+            ClickableWord.isCorrect = false;
         }
 
         if (_correctClicks >= _correctAnswers)
@@ -50,6 +53,7 @@ public class GameController : MonoBehaviour
             Debug.Log("All Noun has been found");
             _correctClicks = 0;
         }
+        
         
     }
 }
