@@ -5,11 +5,17 @@ using UnityEngine.EventSystems;
 public class ClickableWord : MonoBehaviour, IPointerClickHandler
 {
     string _randomWord;
+    public static bool isCorrect;
     
     public void OnPointerClick(PointerEventData eventData)
     { 
-        FindObjectOfType<GameController>().checkWord(_randomWord);   
-        enabled = false;         
+        FindObjectOfType<GameController>().checkWord(_randomWord);
+        if(isCorrect)
+            GetComponent<TMP_Text>().color = Color.green;
+        else
+            GetComponent<TMP_Text>().color = Color.gray;
+
+        enabled = false;                
     }
 
     public void SetLetter(string word)
