@@ -1,14 +1,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    int _correctAnswers = 5;
+    int _correctAnswers = 3;
     int _correctClicks;
     int _wrongClicks;
-    string[] nounDictionary = { "Family", "People", "Friend", "Year", "Teacher", "Student" };
-    string[] fillDictionary = { "Blank", "Blank", "Blank", "Blank", "Blank", "Blank" };
+    string[] nounDictionary = { "Book", "Student", "Teacher", "Year", "Friend", "People" };
+    string[] fillDictionary = { "Eat", "Play", "Grab", "Replace", "Jump", "Roll" };
+
+    public Image[] pictures;
 
     void OnEnable()
     {
@@ -24,7 +27,7 @@ public class GameController : MonoBehaviour
 
         //Not final, Only used to populate the wordsList to fill all clickable words.
         for(int i = 0; i < clickables.Length - _correctAnswers; i++)
-            wordList.Add(fillDictionary[Random.Range(0, fillDictionary.Length)]); 
+            wordList.Add(fillDictionary[i]); 
 
         wordList = wordList.OrderBy(t => UnityEngine.Random.Range(0, 10000)).ToList();
 
@@ -38,7 +41,15 @@ public class GameController : MonoBehaviour
     public void checkWord(string word)
     {        
         if(nounDictionary.Contains(word))
-        {
+        {            
+            foreach(Image pic in pictures)
+            {
+                if(pic.name == word)
+                {
+                    pic.GetComponent<Image>().color = new Color32(105,105,105,100);
+                    break;
+                }
+            }
             _correctClicks++;
             FindObjectOfType<CorrectCounterText>().SetCorrectCount(_correctClicks);
             ClickableWord.isCorrect = true;
