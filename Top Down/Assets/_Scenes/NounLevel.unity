@@ -24837,6 +24837,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 497991123188875083, guid: 0e45f76f0f681264489c6b11a7bd6ba5,
+        type: 3}
+      propertyPath: m_text
+      value: Find the following
+      objectReference: {fileID: 0}
+    - target: {fileID: 497991123188875084, guid: 0e45f76f0f681264489c6b11a7bd6ba5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 399
+      objectReference: {fileID: 0}
     - target: {fileID: 497991123307973783, guid: 0e45f76f0f681264489c6b11a7bd6ba5,
         type: 3}
       propertyPath: m_AnchorMax.y

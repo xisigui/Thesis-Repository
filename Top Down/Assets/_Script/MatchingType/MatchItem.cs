@@ -13,7 +13,7 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
 
     public string itemName;
 
-    private GameObject line;
+    public GameObject line;
 
 
     public void OnPointerDown(PointerEventData eventData){
@@ -46,5 +46,9 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
     public void OnPointerEnter(PointerEventData eventData)
     {
         hoverItem = this;
+    }
+
+    public void DisableLine(){
+        Destroy(line);
     }
 }

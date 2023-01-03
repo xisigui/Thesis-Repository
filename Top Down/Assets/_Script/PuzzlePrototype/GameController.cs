@@ -53,7 +53,5 @@ public class GameController : MonoBehaviour
             Debug.Log("All Noun has been found");
             _correctClicks = 0;
         }
-        
-        
     }
 }

@@ -13,6 +13,7 @@ public class MatchLogic : MonoBehaviour
     public GameObject levelCompleteUI;
     public GameObject continueButton;
     public GameObject gameCanvas;
+    MatchItem matchItem;
     private int points = 0;
 
 
@@ -39,5 +40,9 @@ public class MatchLogic : MonoBehaviour
 
     public void ContinueButton(){
         gameCanvas.SetActive(false);
+        points = 0;
+        pointText.text = points + "/" + maxPoints;
+        matchItem.DisableLine();
+        
     }
 }
