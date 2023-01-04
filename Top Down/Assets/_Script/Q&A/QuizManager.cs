@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class QuizManager : MonoBehaviour
 {
     public GameObject[] questions;
     public GameObject QuestionPanel;

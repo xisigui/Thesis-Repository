@@ -13,19 +13,25 @@ public class MatchLogic : MonoBehaviour
     public GameObject levelCompleteUI;
     public GameObject continueButton;
     public GameObject gameCanvas;
+
+    
     MatchItem matchItem;
     private int points = 0;
 
 
     void Start(){
         Instance = this;
+        
+        continueButton.transform.localScale = Vector3.zero;
+       
     }
 
     void UpdatePointstext(){
         pointText.text = points + "/" + maxPoints;
         if(points == maxPoints){
             levelCompleteUI.SetActive(true);
-            continueButton.SetActive(true);
+            //continueButton.SetActive(true);
+            continueButton.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();
         }
     }
 
@@ -40,6 +46,7 @@ public class MatchLogic : MonoBehaviour
 
     public void ContinueButton(){
         gameCanvas.SetActive(false);
+        //gameCanvas.transform.localScale = Vector3.zero;
         points = 0;
         pointText.text = points + "/" + maxPoints;
         matchItem.DisableLine();

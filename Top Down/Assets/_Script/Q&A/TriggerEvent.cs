@@ -7,7 +7,7 @@ public class TriggerEvent : MonoBehaviour
     public GameObject QuestionPanel;
     public GameObject interactText;
     public GameObject AttemptIndicator;
-    public Manager manager;
+    public QuizManager manager;
 
     bool isInside; 
 

@@ -5,6 +5,13 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    public GameObject soundObjectCorrect;
+    public GameObject soundObjectWrong;
+    private AudioClip clip;
+    private AudioClip Clip;
+    public GameObject continueButton;
+     public GameObject gameCanvas;
+
     int _correctAnswers = 3;
     int _correctClicks;
     int _wrongClicks;
@@ -12,6 +19,12 @@ public class GameController : MonoBehaviour
     string[] fillDictionary = { "Eat", "Play", "Grab", "Replace", "Jump", "Roll" };
 
     public Image[] pictures;
+
+    void Start(){
+        clip = soundObjectCorrect.GetComponent<AudioSource>().clip;
+        Clip = soundObjectWrong.GetComponent<AudioSource>().clip;
+        continueButton.transform.localScale = Vector3.zero;
+    }
 
     void OnEnable()
     {
@@ -46,6 +59,7 @@ public class GameController : MonoBehaviour
             {
                 if(pic.name == word)
                 {
+                    soundObjectCorrect.GetComponent<AudioSource>().PlayOneShot(clip);
                     pic.GetComponent<Image>().color = new Color32(105,105,105,100);
                     break;
                 }
@@ -56,13 +70,18 @@ public class GameController : MonoBehaviour
         }else
         {
             _wrongClicks++;
+            soundObjectWrong.GetComponent<AudioSource>().PlayOneShot(Clip);
             ClickableWord.isCorrect = false;
         }
 
         if (_correctClicks >= _correctAnswers)
         {
+            continueButton.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();
             Debug.Log("All Noun has been found");
             _correctClicks = 0;
         }
+    }
+    public void ContinueButton(){
+        gameCanvas.SetActive(false);
     }
 }

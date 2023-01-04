@@ -20,7 +20,7 @@ public class PlayerData
         Level = new int[player.Quizzes.Length];
         for(int i = 0; i<player.Quizzes.Length;i++)
         {             
-            Level[i] = player.Quizzes[i].GetComponent<Manager>().currentLevel;
+            Level[i] = player.Quizzes[i].GetComponent<QuizManager>().currentLevel;
         }
         
     }

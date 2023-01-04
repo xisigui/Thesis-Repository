@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
 
         for(int i = 0;i < Quizzes.Length;i++)
         {
-             Quizzes[i].GetComponent<Manager>().currentLevel = playerdata.Level[i];            
+             Quizzes[i].GetComponent<QuizManager>().currentLevel = playerdata.Level[i];            
         }   
     }
 

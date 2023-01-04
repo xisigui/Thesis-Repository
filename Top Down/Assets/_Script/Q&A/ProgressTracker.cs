@@ -13,7 +13,7 @@ public class ProgressTracker : MonoBehaviour
         int numberOfFinishedAltar = 0;           
             for(int i = 0;i < Quizzes.Length; i++)
             {
-                if(Quizzes[i].GetComponent<Manager>().currentLevel != 9)
+                if(Quizzes[i].GetComponent<QuizManager>().currentLevel != 9)
                 {
                     //Debug.Log(Quizzes[i].name + " is not complete yet");                     
                 } 
@@ -33,9 +33,9 @@ public class ProgressTracker : MonoBehaviour
     {
         for(int i = 0;i < Quizzes.Length; i++)
         {
-            if(Quizzes[i].GetComponent<Manager>().currentLevel != 9)
+            if(Quizzes[i].GetComponent<QuizManager>().currentLevel != 9)
             {
-                Quizzes[i].GetComponent<Manager>().currentLevel = 9;
+                Quizzes[i].GetComponent<QuizManager>().currentLevel = 9;
                 // SceneManager.LoadScene(3); 
             }    
         }

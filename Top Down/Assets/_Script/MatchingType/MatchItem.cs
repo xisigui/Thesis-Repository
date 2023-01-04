@@ -13,7 +13,17 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
 
     public string itemName;
 
-    public GameObject line;
+    private GameObject line;
+
+    public GameObject soundObjectCorrect;
+    public GameObject soundObjectWrong;
+    private AudioClip clip;
+    private AudioClip Clip;
+    
+    void Start(){
+        clip = soundObjectCorrect.GetComponent<AudioSource>().clip;
+        Clip = soundObjectWrong.GetComponent<AudioSource>().clip;
+    }
 
 
     public void OnPointerDown(PointerEventData eventData){
@@ -29,9 +39,11 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
         if(!this.Equals(hoverItem) && itemName.Equals(hoverItem.itemName)){
             UpdateLine(hoverItem.transform.position);
             MatchLogic.AddPoint();
+            soundObjectCorrect.GetComponent<AudioSource>().PlayOneShot(clip);
             Destroy(hoverItem);
             Destroy(this);
         } else {
+            soundObjectWrong.GetComponent<AudioSource>().PlayOneShot(Clip);
             Destroy(line);
         }
     }
