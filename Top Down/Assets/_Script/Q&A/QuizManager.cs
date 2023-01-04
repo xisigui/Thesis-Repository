@@ -7,13 +7,19 @@ public class QuizManager : MonoBehaviour
 {
     public GameObject[] questions;
     public GameObject QuestionPanel;
-    public GameObject AreaToUnlock;
+    //public GameObject AreaToUnlock;
     public GameObject AttemptIndicator;
 
     public GameObject soundObjectCorrect;
     public GameObject soundObjectWrong;
     private AudioClip clip;
     private AudioClip Clip;
+
+    public GameObject finishedPanel;
+    public GameObject gamePanel;
+
+    
+    public Quest quest;
     
     public int currentLevel;
     [SerializeField]
@@ -22,13 +28,15 @@ public class QuizManager : MonoBehaviour
     public Image[] hearts;
 
     void Start(){
+        finishedPanel.transform.localScale = Vector3.zero;
          clip = soundObjectCorrect.GetComponent<AudioSource>().clip;
          Clip = soundObjectWrong.GetComponent<AudioSource>().clip;
     }
     void Update()
     {
         if(currentLevel == 9){
-            AreaToUnlock.SetActive(false);
+            finishedPanel.SetActive(true);
+            quest.FinishQuest();
         }
     }
 
@@ -42,7 +50,7 @@ public class QuizManager : MonoBehaviour
             soundObjectCorrect.GetComponent<AudioSource>().PlayOneShot(clip);
         }
         else
-        {            
+        {
             questions[currentLevel].SetActive(false);
             QuestionPanel.SetActive(false);      
         }
@@ -81,5 +89,9 @@ public class QuizManager : MonoBehaviour
 
         questions[currentLevel].SetActive(false);
         questions[currentLevel].SetActive(true);
+    }
+
+    public void ContinueButton(){
+        gamePanel.SetActive(false);
     }
 }

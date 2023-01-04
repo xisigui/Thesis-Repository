@@ -24,8 +24,10 @@ public class TriggerEvent : MonoBehaviour
                 AttemptIndicator.SetActive(true);
             }
         }
-        if(manager.currentLevel == 9)
-            manager.AreaToUnlock.SetActive(false);
+        if(manager.currentLevel == 9){
+            
+        }
+            //manager.AreaToUnlock.SetActive(false);
                 
     }
 

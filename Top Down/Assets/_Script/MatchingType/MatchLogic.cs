@@ -14,6 +14,7 @@ public class MatchLogic : MonoBehaviour
     public GameObject continueButton;
     public GameObject gameCanvas;
 
+    public Quest quest;
     
     MatchItem matchItem;
     private int points = 0;
@@ -21,7 +22,6 @@ public class MatchLogic : MonoBehaviour
 
     void Start(){
         Instance = this;
-        
         continueButton.transform.localScale = Vector3.zero;
        
     }
@@ -29,6 +29,7 @@ public class MatchLogic : MonoBehaviour
     void UpdatePointstext(){
         pointText.text = points + "/" + maxPoints;
         if(points == maxPoints){
+            quest.FinishQuest();
             levelCompleteUI.SetActive(true);
             //continueButton.SetActive(true);
             continueButton.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();

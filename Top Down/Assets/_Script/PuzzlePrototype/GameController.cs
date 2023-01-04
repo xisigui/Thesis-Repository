@@ -10,7 +10,8 @@ public class GameController : MonoBehaviour
     private AudioClip clip;
     private AudioClip Clip;
     public GameObject continueButton;
-     public GameObject gameCanvas;
+    public GameObject gameCanvas;
+    public Quest quest;
 
     int _correctAnswers = 3;
     int _correctClicks;
@@ -79,6 +80,7 @@ public class GameController : MonoBehaviour
             continueButton.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();
             Debug.Log("All Noun has been found");
             _correctClicks = 0;
+            quest.FinishQuest();
         }
     }
     public void ContinueButton(){

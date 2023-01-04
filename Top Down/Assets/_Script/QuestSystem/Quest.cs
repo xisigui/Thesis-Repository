@@ -30,15 +30,14 @@ public class Quest : MonoBehaviour
 
     */
 
-    void FinishQuest(){
+    public void FinishQuest(){
         questItem.GetComponent<Button>().interactable = false;
         currentColor = completedColor;
         questItem.color = completedColor;
         arrow.gameObject.SetActive(false);
-
     }
     
-    public void Awake(){
+    public void OnClick(){
         arrow.gameObject.SetActive(true);
         arrow.target = this.transform;
         foreach(Quest quest in allQuest){
