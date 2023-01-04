@@ -38,7 +38,7 @@ public class Quest : MonoBehaviour
 
     }
     
-    public void OnQuestClick(){
+    public void Awake(){
         arrow.gameObject.SetActive(true);
         arrow.target = this.transform;
         foreach(Quest quest in allQuest){
