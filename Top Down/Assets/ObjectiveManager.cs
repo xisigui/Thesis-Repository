@@ -6,17 +6,15 @@ using UnityEngine.UI;
 public class ObjectiveManager : MonoBehaviour
 {
     public GameObject[] objectives;
-    public Quest quest;
-    public Color finished;
 
     void Update()
     {
-        for (int i = 0; i < objectives.Length; i++)
+        foreach (GameObject i in objectives)
         {
-            if(objectives[i].GetComponent<Quest>().currentColor == finished)
-                {
-                   Debug.Log(objectives[i].name+ " is completed");              
-                } 
+            if(i.GetComponent<Quest>().isFinished)
+            {
+                Debug.Log(i.name + " is finished");
+            }     
         }
     }   
 }

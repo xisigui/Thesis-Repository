@@ -15,6 +15,8 @@ public class Quest : MonoBehaviour
 
     public Quest[] allQuest;
 
+    public bool isFinished;
+
     private void Start(){
         allQuest = FindObjectsOfType<Quest>();
         currentColor = questItem.color;
@@ -35,6 +37,7 @@ public class Quest : MonoBehaviour
         currentColor = completedColor;
         questItem.color = completedColor;
         arrow.gameObject.SetActive(false);
+        isFinished = true;
     }
     
     public void OnClick(){
