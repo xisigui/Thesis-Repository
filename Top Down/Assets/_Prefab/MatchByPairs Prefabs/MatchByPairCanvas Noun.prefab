@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 4243690883396420657}
   - component: {fileID: 4243690883396420661}
   m_Layer: 5
-  m_Name: MatchByPairCanvas
+  m_Name: MatchByPairCanvas Noun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

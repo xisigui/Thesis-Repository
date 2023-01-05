@@ -5482,6 +5482,8 @@ MonoBehaviour:
   AttemptIndicator: {fileID: 0}
   soundObjectCorrect: {fileID: 0}
   soundObjectWrong: {fileID: 0}
+  finishedPanel: {fileID: 0}
+  gamePanel: {fileID: 0}
   quest: {fileID: 0}
   currentLevel: 0
   Attempt: 3

@@ -9,6 +9,9 @@ public class Interactable : MonoBehaviour
     public KeyCode interactkey;
     public UnityEvent interactAction;
 
+    void Start(){
+    }
+
     void Update()
     {
         if(isInRange){
@@ -16,7 +19,6 @@ public class Interactable : MonoBehaviour
                 interactAction.Invoke();
             }
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collider){
