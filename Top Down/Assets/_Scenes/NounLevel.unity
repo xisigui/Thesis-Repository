@@ -20536,8 +20536,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a000de15654944ab830d65a70db06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectives: []
-  quest: {fileID: 0}
+  objectives:
+  - {fileID: 1808372999}
+  - {fileID: 2007946894}
+  - {fileID: 2062414085}
+  quest: {fileID: 2007946895}
 --- !u!1001 &841394719
 PrefabInstance:
   m_ObjectHideFlags: 0

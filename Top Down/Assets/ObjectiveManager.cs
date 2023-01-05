@@ -7,22 +7,16 @@ public class ObjectiveManager : MonoBehaviour
 {
     public GameObject[] objectives;
     public Quest quest;
-
-    void Start()
-    {
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            Transform child = transform.GetChild(i);
-            Button button = child.GetComponent<Button>();
-            if (button != null)
-            {
-                Debug.Log("Button color: " + quest.currentColor);
-            }
-        }
-    }
+    public Color finished;
 
     void Update()
     {
-        
-    }
+        for (int i = 0; i < objectives.Length; i++)
+        {
+            if(objectives[i].GetComponent<Quest>().currentColor == finished)
+                {
+                   Debug.Log(objectives[i].name+ " is completed");              
+                } 
+        }
+    }   
 }
