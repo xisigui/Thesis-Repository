@@ -16,8 +16,8 @@ public class GameController : MonoBehaviour
     int _correctAnswers = 3;
     int _correctClicks;
     int _wrongClicks;
-    string[] nounDictionary = { "Book", "Student", "Teacher", "Year", "Friend", "People" };
-    string[] fillDictionary = { "Eat", "Play", "Grab", "Replace", "Jump", "Roll" };
+    public string[] nounDictionary = { "Book", "Student", "Teacher", "Year", "Friend", "People" };
+    public string[] fillDictionary = { "Eat", "Play", "Grab", "Replace", "Jump", "Roll" };
 
     public Image[] pictures;
 
@@ -39,7 +39,6 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < _correctAnswers; i++)
             wordList.Add(nounDictionary[i]);
 
-        //Not final, Only used to populate the wordsList to fill all clickable words.
         for(int i = 0; i < clickables.Length - _correctAnswers; i++)
             wordList.Add(fillDictionary[i]); 
 
