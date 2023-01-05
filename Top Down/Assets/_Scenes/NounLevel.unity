@@ -19090,6 +19090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectives: []
   quest: {fileID: 0}
+  finished: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &728441745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20541,6 +20542,7 @@ MonoBehaviour:
   - {fileID: 2007946894}
   - {fileID: 2062414085}
   quest: {fileID: 2007946895}
+  finished: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &841394719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37885,7 +37887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questItem: {fileID: 990288360205297311}
-  completedColor: {r: 0.01868701, g: 1, b: 0, a: 1}
+  completedColor: {r: 0.019607844, g: 1, b: 0, a: 1}
   activeColor: {r: 1, g: 0.955599, b: 0.0141509175, a: 1}
   currentColor: {r: 1, g: 0, b: 0, a: 1}
   arrow: {fileID: 393815726}
@@ -44467,7 +44469,8 @@ MonoBehaviour:
   - {fileID: 1808372999}
   - {fileID: 2007946894}
   - {fileID: 2062414085}
-  quest: {fileID: 0}
+  quest: {fileID: 2007946895}
+  finished: {r: 0.019607844, g: 1, b: 0, a: 0}
 --- !u!4 &2049910142
 Transform:
   m_ObjectHideFlags: 0
