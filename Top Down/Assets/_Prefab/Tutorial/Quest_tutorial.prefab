@@ -40,11 +40,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639075688}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 35c5ae49ad9db9243a9f210f5cb5bbbb, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: cc21392eee2879c45a6979f5feabd76f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 0a943003c4e1a9e41b675f1d185e9f10, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 4bf1c080ba3a38444acb5059e7b2c10f, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
@@ -53,14 +53,12 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -133,7 +131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 0a943003c4e1a9e41b675f1d185e9f10, type: 2}
+  m_Texture: {fileID: 8400000, guid: 4bf1c080ba3a38444acb5059e7b2c10f, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -387,8 +385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -1.1653e-11, y: 125.100006}
-  m_SizeDelta: {x: 1155.0178, y: 170.46677}
+  m_AnchoredPosition: {x: -8.7765, y: 113.6791}
+  m_SizeDelta: {x: 1246.4021, y: 163.0945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1681242881077957823
 CanvasRenderer:
@@ -418,8 +416,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To move press the <#ff9130>W</color> to move upward,  <#ff9130>AD</color>
-    for sideward and <#ff9130>S</color> to move downward.
+  m_text: To complete the <#ff9130>quest</color>, click the <#ff9130>left mouse button</color>
+    on each <#ff9130>icon</color>. When you have completed all of the tasks, the
+    icon will turn <#00FF00>green</color>, allowing you to return.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8,
@@ -447,10 +446,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 41.25
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -594,7 +593,7 @@ GameObject:
   - component: {fileID: 1681242881611145682}
   - component: {fileID: 1681242881611145683}
   m_Layer: 5
-  m_Name: Movement_Tutorial
+  m_Name: Quest_tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1014,7 +1013,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1681242882173426636}
-  - component: {fileID: 8018888071277715734}
+  - component: {fileID: 927690453851569909}
   m_Layer: 0
   m_Name: Popup_Tutorial
   m_TagString: Untagged
@@ -1044,7 +1043,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8018888071277715734
+--- !u!114 &927690453851569909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1275,7 +1274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8018888071277715734}
+      - m_Target: {fileID: 927690453851569909}
         m_TargetAssemblyTypeName: DisableTutorial, Assembly-CSharp
         m_MethodName: DisableObject
         m_Mode: 1
