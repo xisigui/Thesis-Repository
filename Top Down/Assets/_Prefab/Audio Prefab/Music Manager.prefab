@@ -50,13 +50,19 @@ MonoBehaviour:
     volume: 0.2
     loop: 1
     source: {fileID: 0}
+    audioMixer: {fileID: 6433788216702161788, guid: b13abb8c212c8a946b9498330390403d,
+      type: 2}
   - name: Dialog Music
     clip: {fileID: 8300000, guid: 1e48cf2131813e0449c6a379f3efc0dd, type: 3}
     volume: 0.3
     loop: 1
     source: {fileID: 0}
+    audioMixer: {fileID: 6433788216702161788, guid: b13abb8c212c8a946b9498330390403d,
+      type: 2}
   - name: Intro Music
     clip: {fileID: 8300000, guid: 78c146d2b71ffaa45974ae0259884f3c, type: 3}
     volume: 0.2
     loop: 1
     source: {fileID: 0}
+    audioMixer: {fileID: 6433788216702161788, guid: b13abb8c212c8a946b9498330390403d,
+      type: 2}

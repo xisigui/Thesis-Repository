@@ -25,6 +25,7 @@ public class MusicManager : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.audioMixer;
         }
     }
 

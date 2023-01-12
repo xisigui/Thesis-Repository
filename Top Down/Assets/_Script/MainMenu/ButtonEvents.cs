@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class ButtonEvents : MonoBehaviour
 {
     public GameObject loadingScreen;
+    public GameObject settings;
     public void LoadGameScene(string levelToLoad)
     {        
         StartCoroutine(LoadLevelAsync(levelToLoad));
@@ -13,6 +14,16 @@ public class ButtonEvents : MonoBehaviour
         FindObjectOfType<MusicManager>().Pause("Main Music");   
         FindObjectOfType<MusicManager>().Play("Intro Music");
     }    
+
+    public void OpenSettings()
+    {
+        settings.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        settings.SetActive(false);
+    }
 
     public void Quit()
     {
