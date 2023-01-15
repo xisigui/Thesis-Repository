@@ -154,6 +154,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Movement_Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 599ef526839d9234e8069ef3020d7e5e,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 599ef526839d9234e8069ef3020d7e5e,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 599ef526839d9234e8069ef3020d7e5e,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 599ef526839d9234e8069ef3020d7e5e, type: 3}
 --- !u!224 &24622398265313426 stripped
@@ -278,6 +293,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pairs_Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 5fdffac94ca899846b48994e2d6b5d8a,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 5fdffac94ca899846b48994e2d6b5d8a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 5fdffac94ca899846b48994e2d6b5d8a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fdffac94ca899846b48994e2d6b5d8a, type: 3}
@@ -404,6 +434,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quiz_Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 29b57c21d11ccc244b11974167e56e5c,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 29b57c21d11ccc244b11974167e56e5c,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 29b57c21d11ccc244b11974167e56e5c,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29b57c21d11ccc244b11974167e56e5c, type: 3}
 --- !u!224 &24622397667605319 stripped
@@ -528,6 +573,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arrow_Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 2517bd9bb94c84047a2e39ce4403b3d7,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 2517bd9bb94c84047a2e39ce4403b3d7,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 2517bd9bb94c84047a2e39ce4403b3d7,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2517bd9bb94c84047a2e39ce4403b3d7, type: 3}
@@ -654,6 +714,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wordhunt_Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 643d9163eebdf344b819b1362505c971,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 643d9163eebdf344b819b1362505c971,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 643d9163eebdf344b819b1362505c971,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 643d9163eebdf344b819b1362505c971, type: 3}
 --- !u!224 &24622397716093436 stripped
@@ -778,6 +853,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Quest_tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 785de79ead68eac4387b4ddc42d64f48,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 785de79ead68eac4387b4ddc42d64f48,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681242881611145682, guid: 785de79ead68eac4387b4ddc42d64f48,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 785de79ead68eac4387b4ddc42d64f48, type: 3}

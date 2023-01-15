@@ -416,9 +416,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To complete the <#ff9130>quest</color>, click the <#ff9130>left mouse button</color>
-    on each <#ff9130>icon</color>. When you have completed all of the tasks, the
-    icon will turn <#00FF00>green</color>, allowing you to return.
+  m_text: To complete the <#ff9130>Quest</color>, click the <#ff9130>Left Mouse Button</color>
+    on each <#ff9130>Icon</color>. When you have completed all of the tasks, the
+    icon will turn <#00FF00>Green</color>, allowing you to return.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8,
@@ -654,10 +654,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

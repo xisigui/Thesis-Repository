@@ -17852,10 +17852,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -28178,12 +28178,12 @@ PrefabInstance:
     - target: {fileID: 2810723220883564021, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -95.9
+      value: -95.8999
       objectReference: {fileID: 0}
     - target: {fileID: 2810723220883564021, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -90.7
+      value: -90.69995
       objectReference: {fileID: 0}
     - target: {fileID: 3149337694056239431, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
@@ -47206,6 +47206,21 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 494942287
       objectReference: {fileID: 0}
+    - target: {fileID: 990288359180820565, guid: 4852d37b3e438ab4fb3e9645c0c0346d,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 990288359180820565, guid: 4852d37b3e438ab4fb3e9645c0c0346d,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 990288359180820565, guid: 4852d37b3e438ab4fb3e9645c0c0346d,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 990288359180820567, guid: 4852d37b3e438ab4fb3e9645c0c0346d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -47695,6 +47710,96 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 970762699}
     m_Modifications:
+    - target: {fileID: 24622397315038599, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397315038599, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397315038599, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397641505488, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397641505488, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397641505488, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397667605337, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397667605337, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397667605337, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397716093410, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397716093410, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397716093410, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397761790789, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397761790789, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622397761790789, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622398265313420, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622398265313420, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 24622398265313420, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 1658310437553092744, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
         type: 3}
       propertyPath: m_RootOrder
@@ -48209,6 +48314,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590464682111391091, guid: 2b0a03123dd016a49ab4b502cadb41f6,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590464682111391091, guid: 2b0a03123dd016a49ab4b502cadb41f6,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590464682111391091, guid: 2b0a03123dd016a49ab4b502cadb41f6,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8590464682111391100, guid: 2b0a03123dd016a49ab4b502cadb41f6,
         type: 3}
