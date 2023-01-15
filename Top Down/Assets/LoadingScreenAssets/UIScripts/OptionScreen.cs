@@ -107,7 +107,7 @@ public class OptionScreen : MonoBehaviour
     }
     public void ApplyGraphics()
     {
-        //Screen.fullScreen = fullscreenTog.isOn;
+        Screen.fullScreen = fullscreenTog.isOn;
 
         if (vsyncTog.isOn)
         {
