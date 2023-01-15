@@ -28153,7 +28153,7 @@ PrefabInstance:
     - target: {fileID: 2612881007099497878, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2810723220883564021, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
@@ -28468,7 +28468,7 @@ PrefabInstance:
     - target: {fileID: 8421273357293296155, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8421273357293296159, guid: 5eb4fcfba8e9f73459f4a6b020ce09f4,
         type: 3}
@@ -47758,7 +47758,7 @@ PrefabInstance:
     - target: {fileID: 1658310437553092745, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c11c5e6db42c26448b5b9a21db16d4a, type: 3}
@@ -48204,6 +48204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TutorialButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590464682111391089, guid: 2b0a03123dd016a49ab4b502cadb41f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8590464682111391100, guid: 2b0a03123dd016a49ab4b502cadb41f6,
         type: 3}
