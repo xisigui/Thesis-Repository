@@ -38,6 +38,7 @@ public class Quest : MonoBehaviour
         questItem.color = completedColor;
         arrow.gameObject.SetActive(false);
         isFinished = true;
+        FindObjectOfType<ObjectiveManager>().CheckForIncomplete();
     }
     
     public void OnClick(){

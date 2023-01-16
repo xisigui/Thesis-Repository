@@ -28,7 +28,6 @@ public class QuizManager : MonoBehaviour
     public Image[] hearts;
 
     void Start(){
-        finishedPanel.transform.localScale = Vector3.zero;
          clip = soundObjectCorrect.GetComponent<AudioSource>().clip;
          Clip = soundObjectWrong.GetComponent<AudioSource>().clip;
     }
