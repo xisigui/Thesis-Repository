@@ -23,7 +23,7 @@ public class ObjectiveManager : MonoBehaviour
         }
         if(incomplete <= 0)
         {
-            Dialog.SetActive(true);
+            Popup.SetActive(true);
         }
 
     }
