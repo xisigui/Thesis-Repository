@@ -46819,6 +46819,7 @@ GameObject:
   - component: {fileID: 2124130464}
   - component: {fileID: 2124130463}
   - component: {fileID: 2124130462}
+  - component: {fileID: 2124130465}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -46876,6 +46877,20 @@ Transform:
   m_Father: {fileID: 970762699}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2124130465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124130461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c567105c316fb44f8739413d8828bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 0}
+  settings: {fileID: 0}
 --- !u!224 &2127543831 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 497991124161265087, guid: 0e45f76f0f681264489c6b11a7bd6ba5,
@@ -47864,6 +47879,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658310438189722679, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658310438680755545, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658310438757146219, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658310438800023522, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658310438894274558, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658310439353358652, guid: 4c11c5e6db42c26448b5b9a21db16d4a,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c11c5e6db42c26448b5b9a21db16d4a, type: 3}
