@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 587453183}
   - component: {fileID: 587453184}
   m_Layer: 0
-  m_Name: StageList (6)
+  m_Name: Interjection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 1263736440}
   - component: {fileID: 1263736441}
   m_Layer: 0
-  m_Name: StageList (3)
+  m_Name: Adjective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 1644466102}
   - component: {fileID: 1644466103}
   m_Layer: 0
-  m_Name: StageList (5)
+  m_Name: Conjunction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1740,7 +1740,7 @@ GameObject:
   - component: {fileID: 1862626064}
   - component: {fileID: 1862626065}
   m_Layer: 0
-  m_Name: StageList (4)
+  m_Name: Preposition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3128,7 +3128,7 @@ GameObject:
   - component: {fileID: 1097174728945029172}
   - component: {fileID: 3921921013798775421}
   m_Layer: 0
-  m_Name: StageList (1)
+  m_Name: Verb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3376,7 +3376,7 @@ GameObject:
   - component: {fileID: 1097174729321068543}
   - component: {fileID: 2050946514469760000}
   m_Layer: 0
-  m_Name: StageList
+  m_Name: Noun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3846,7 +3846,7 @@ GameObject:
   - component: {fileID: 1577231399379305621}
   - component: {fileID: 1842378838813013625}
   m_Layer: 0
-  m_Name: StageList (2)
+  m_Name: Pronoun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4017,7 +4017,7 @@ GameObject:
   - component: {fileID: 341433030585662581}
   - component: {fileID: 1962281063270960232}
   m_Layer: 0
-  m_Name: StageList (7)
+  m_Name: Adverb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
