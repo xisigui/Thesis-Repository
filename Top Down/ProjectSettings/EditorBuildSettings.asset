@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/_Scenes/LevelSelectionScene.unity
     guid: ff3c19ba10ec8d74ea31154132fd5c96
   - enabled: 1
-    path: Assets/_Scenes/NounLevel.unity
+    path: Assets/_Scenes/Level Scenes/Noun Level.unity
     guid: 9c8522566393cc944a97cd1184f5c161
   - enabled: 1
-    path: Assets/_Scenes/VerbCutscene.unity
+    path: Assets/_Scenes/Level Cutscene/VerbCutscene.unity
     guid: b7c843726096a61448938e876ebbb1d5
   - enabled: 1
-    path: Assets/_Scenes/VerbLevel.unity
+    path: Assets/_Scenes/Level Scenes/VerbLevel.unity
     guid: ed573e3c066435849a12265275028cf1
   - enabled: 1
     path: Assets/_Scenes/IntroCutScene.unity
@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/_Scenes/EndScene.unity
     guid: 86dc2d9303cdfcf45adbe6e4789eced0
   - enabled: 1
-    path: Assets/_Scenes/NounCutscene.unity
+    path: Assets/_Scenes/Level Cutscene/NounCutscene.unity
     guid: b27ca8b9e8102aa4280933c0fe2c0312
   m_configObjects: {}
