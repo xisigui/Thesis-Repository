@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/_Scenes/Level Scenes/VerbLevel.unity
     guid: ed573e3c066435849a12265275028cf1
   - enabled: 1
+    path: Assets/_Scenes/Level Scenes/Adverb level.unity
+    guid: 2b8d647a23c344d46803591d118843ea
+  - enabled: 1
+    path: Assets/_Scenes/Level Scenes/Adjective level.unity
+    guid: 86d8d6b01676086429368b077722649d
+  - enabled: 1
     path: Assets/_Scenes/IntroCutScene.unity
     guid: 6c7ca379f826b8941ae10b019f8ea875
   - enabled: 1

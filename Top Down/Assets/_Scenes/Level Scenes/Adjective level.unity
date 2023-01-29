@@ -23762,6 +23762,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 4301473429619428559, guid: ca754634220f9284ca124515419ef06c,
+        type: 3}
+      propertyPath: m_text
+      value: Find the pair!
+      objectReference: {fileID: 0}
     - target: {fileID: 7846970744325966429, guid: ca754634220f9284ca124515419ef06c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
