@@ -8,18 +8,18 @@ public class VideoPlayer : MonoBehaviour
 {
     public GameObject loadingScreen;
     public UnityEngine.Video.VideoPlayer vidPlayer;
+    public string SceneToLoad;
     // Start is called before the first frame update
     void Start()
     {
-        // vidPlayer.loopPointReached += loadVerbScene;
-        vidPlayer.loopPointReached += loadVerbScene;
+        vidPlayer.loopPointReached += loadScene;
     }
 
     // Update is called once per frame
-    void loadVerbScene(UnityEngine.Video.VideoPlayer vp)
+    void loadScene(UnityEngine.Video.VideoPlayer vp)
     {
-        StartCoroutine(LoadLevelAsync("VerbLevel"));
-    }  
+        StartCoroutine(LoadLevelAsync(SceneToLoad));
+    }    
 
     IEnumerator LoadLevelAsync(string levelToLoad)
     {
