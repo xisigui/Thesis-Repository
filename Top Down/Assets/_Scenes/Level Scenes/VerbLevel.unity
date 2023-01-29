@@ -872,6 +872,11 @@ PrefabInstance:
       propertyPath: soundObjectCorrect
       value: 
       objectReference: {fileID: 733846278}
+    - target: {fileID: 4015784794078236986, guid: 0cde4f28adff3184f8ef9ec7aa0f07d7,
+        type: 3}
+      propertyPath: nounDictionary.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4015784794205714912, guid: 0cde4f28adff3184f8ef9ec7aa0f07d7,
         type: 3}
       propertyPath: m_AnchorMax.y
