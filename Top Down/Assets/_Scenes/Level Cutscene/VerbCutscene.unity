@@ -571,6 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 2037701132}
   vidPlayer: {fileID: 1996910565}
+  SceneToLoad: VerbLevel
 --- !u!1 &2012158823
 GameObject:
   m_ObjectHideFlags: 0
