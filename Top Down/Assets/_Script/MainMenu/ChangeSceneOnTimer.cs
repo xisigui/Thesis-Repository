@@ -19,4 +19,8 @@ public class ChangeSceneOnTimer : MonoBehaviour
         }
         
     }
+
+    public void Skip(){
+        SceneManager.LoadScene("Noun Level");
+    }
 }
