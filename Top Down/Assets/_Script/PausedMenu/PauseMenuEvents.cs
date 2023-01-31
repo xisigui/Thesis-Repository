@@ -44,7 +44,7 @@ public class PauseMenuEvents : MonoBehaviour
         Time.timeScale = 1;
         FindObjectOfType<MusicManager>().StopPlaying("Dialog Music");
         FindObjectOfType<MusicManager>().Play("Main Music");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene("LevelSelectionScene");
     }
     public void OpenQuitMessange()
     {

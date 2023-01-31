@@ -35,4 +35,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Level Cutscene/NounCutscene.unity
     guid: b27ca8b9e8102aa4280933c0fe2c0312
+  - enabled: 1
+    path: Assets/_Scenes/Level Cutscene/AdjectiveCutscene.unity
+    guid: 186512f1531b2ca4d8ced92d8f428433
+  - enabled: 1
+    path: Assets/_Scenes/Level Cutscene/AdverbCutscene.unity
+    guid: aead2bdbc39278241a8365c00466ce48
+  - enabled: 1
+    path: Assets/_Scenes/Level Cutscene/PronounCutscene.unity
+    guid: 62b8ae23ba76e1d409fb105191b3fc9b
+  - enabled: 1
+    path: Assets/_Scenes/Level Scenes/Conjunction level.unity
+    guid: 97208dd753205e7439cd9493cedc6bdd
+  - enabled: 1
+    path: Assets/_Scenes/Level Scenes/Interjection level.unity
+    guid: b86c6255d34e59743b2677566ef041db
+  - enabled: 1
+    path: Assets/_Scenes/Level Scenes/Preposition level.unity
+    guid: 59ef530ce5bc52048a89db9da6de5e6e
+  - enabled: 1
+    path: Assets/_Scenes/Level Scenes/Pronoun level.unity
+    guid: bff4a3f4a05531448a2e15b4fbbf7a70
   m_configObjects: {}
