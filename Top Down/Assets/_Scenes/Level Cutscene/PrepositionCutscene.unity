@@ -419,7 +419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: a8cf8fe7b2c1c414daa8801eb0ffdcfd, type: 2}
+  m_Texture: {fileID: 8400000, guid: 4858a841a761e5349af968328046cb8d, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -735,6 +735,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5620713239707185788, guid: e6bcf10322866b74588cc429ff3cd1b4,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 17e1b9904ea0a284394496fb9a6a73c2,
+        type: 3}
+    - target: {fileID: 5620713239707185788, guid: e6bcf10322866b74588cc429ff3cd1b4,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 4858a841a761e5349af968328046cb8d, type: 2}
     - target: {fileID: 5620713239707185789, guid: e6bcf10322866b74588cc429ff3cd1b4,
         type: 3}
       propertyPath: m_Name
