@@ -14,7 +14,7 @@ public class VideoPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("showSkipButton", 30);
+        Invoke("showSkipButton", 15);
         vidPlayer.loopPointReached += loadScene;
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class ButtonEvents : MonoBehaviour
 {
     public GameObject loadingScreen;
-    public GameObject settings;
+    public GameObject creditPanel;
     public void LoadGameScene(string levelToLoad)
     {        
         StartCoroutine(LoadLevelAsync(levelToLoad));
@@ -14,16 +14,6 @@ public class ButtonEvents : MonoBehaviour
         FindObjectOfType<MusicManager>().Pause("Main Music");   
         FindObjectOfType<MusicManager>().Play("Intro Music");
     }    
-
-    public void OpenSettings()
-    {
-        settings.SetActive(true);
-    }
-
-    public void CloseSettings()
-    {
-        settings.SetActive(false);
-    }
 
     public void Quit()
     {
@@ -38,5 +28,13 @@ public class ButtonEvents : MonoBehaviour
         {
             yield return null;
         }
+    }
+
+    public void OpenCredits(){
+        creditPanel.SetActive(true);
+    }
+
+    public void CloseCredits(){
+        creditPanel.SetActive(false);
     }
 }

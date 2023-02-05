@@ -56,4 +56,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Level Scenes/Pronoun level.unity
     guid: bff4a3f4a05531448a2e15b4fbbf7a70
+  - enabled: 1
+    path: Assets/_Scenes/Level Cutscene/ConjunctionCutscene.unity
+    guid: 8f8041f2a4a5c2248ad3c08c347b0642
+  - enabled: 1
+    path: Assets/_Scenes/Level Cutscene/InterjectionCutscene.unity
+    guid: 66b2c85efcf0e6a4eb021fd505912ea9
+  - enabled: 1
+    path: Assets/_Scenes/Level Cutscene/PrepositionCutscene.unity
+    guid: e319cb682655a0441bc2bf3061739e83
   m_configObjects: {}
